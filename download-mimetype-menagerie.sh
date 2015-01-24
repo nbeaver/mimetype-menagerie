@@ -6,6 +6,8 @@
 # -- Public domain or Creative Commons licensing.
 
 function download {
+	# Use --location so that it will resolve 302 errors,
+	# and use --remote-name so that we can just use the URI.
 	curl --location --remote-name "$*"
 }
 
@@ -16,7 +18,12 @@ cd documents/
 download "http://www.gutenberg.org/cache/epub/1/pg1.txt"
 download "http://www.gutenberg.org/cache/epub/1/pg1.epub"
 download "http://www.gutenberg.org/cache/epub/1/pg1.mobi"
-# PDF-like formats.
+# Daisy E-reader format.
+download "http://www.daisy.org/samples/202full-text-full-audio/gon-ruby-mp3.zip"
+download "http://www.daisy.org/samples/dtbook-xml/great-painters-dtbook-2005-3.zip"
+download "http://www.daisy.org/samples/202text-only/wipo-treaty-d202-text-only.zip"
+# PDF and similar formats.
+download "http://www.irs.gov/pub/irs-pdf/f1040.pdf"
 download "http://upload.wikimedia.org/wikipedia/commons/7/73/ASCII.pdf"
 download "http://upload.wikimedia.org/wikipedia/commons/7/73/ASCII.pdf"
 download "http://upload.wikimedia.org/wikipedia/commons/9/94/Factor_graph.pdf"
@@ -58,13 +65,14 @@ download "http://arxiv.org/html/cond-mat/9903007v4/fig3.eps"
 cd -
 
 # Audio.
-# Wikimedia Commons does not allow .mp3 files: https://commons.wikimedia.org/wiki/Commons:File_types
 mkdir --parents audio/
 cd audio/
 download "http://upload.wikimedia.org/wikipedia/commons/b/b0/%22Bebop-rebop%22_early_bop_phrase.mid"
 download "http://upload.wikimedia.org/wikipedia/commons/7/7f/Gliss.ogg"
 download "http://upload.wikimedia.org/wikipedia/commons/9/98/Beepalert.wav"
 download "http://upload.wikimedia.org/wikipedia/commons/b/b2/Bell-ring.flac"
+# Wikimedia Commons does not allow .mp3 files.
+# https://commons.wikimedia.org/wiki/Commons:File_types
 download "https://archive.org/download/scale1/s1.mp3"
 cd -
 
