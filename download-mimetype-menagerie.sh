@@ -1,9 +1,15 @@
 #!/usr/bin/env bash
 
-# Criteria for files:
+# Criteria for files, in order of priority:
 # -- Reliable URIs.
 # -- Relatively small size to save bandwidth.
 # -- Public domain or Creative Commons licensing.
+
+# TODO: figure out how to check if they've already been download,
+# maybe with md5sum or CRC checksum?
+# Or checking if the date is more recent?
+
+# TODO: move the URLS to a text file.
 
 function download {
 	# Use --location so that it will resolve 302 errors,
@@ -18,6 +24,8 @@ cd documents/
 download "http://www.gutenberg.org/cache/epub/1/pg1.txt"
 download "http://www.gutenberg.org/cache/epub/1/pg1.epub"
 download "http://www.gutenberg.org/cache/epub/1/pg1.mobi"
+download "http://mako.cc/projects/utf8-tests/UTF-8-i_eat_glass.txt"
+download "http://www.ic.unicamp.br/~stolfi/EXPORT/www/ISO-8859-1-Encoding.html"
 # Daisy E-reader format.
 download "http://www.daisy.org/samples/202full-text-full-audio/gon-ruby-mp3.zip"
 download "http://www.daisy.org/samples/dtbook-xml/great-painters-dtbook-2005-3.zip"
@@ -71,6 +79,7 @@ download "http://upload.wikimedia.org/wikipedia/commons/b/b0/%22Bebop-rebop%22_e
 download "http://upload.wikimedia.org/wikipedia/commons/7/7f/Gliss.ogg"
 download "http://upload.wikimedia.org/wikipedia/commons/9/98/Beepalert.wav"
 download "http://upload.wikimedia.org/wikipedia/commons/b/b2/Bell-ring.flac"
+download "http://api.modarchive.org/downloads.php?moduleid=149252#unreeeal_superhero_3.xm"
 # Wikimedia Commons does not allow .mp3 files.
 # https://commons.wikimedia.org/wiki/Commons:File_types
 download "https://archive.org/download/scale1/s1.mp3"
