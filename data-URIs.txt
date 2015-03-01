@@ -1,0 +1,7 @@
+https://raw.githubusercontent.com/bruceravel/demeter/master/examples/AuCl.cif
+https://raw.githubusercontent.com/bruceravel/demeter/master/examples/FeS2.apj
+https://raw.githubusercontent.com/bruceravel/demeter/master/examples/cu.prj
+https://raw.githubusercontent.com/bruceravel/demeter/master/examples/fe.060
+https://raw.githubusercontent.com/bruceravel/demeter/master/examples/cyanobacteria.prj
+https://raw.githubusercontent.com/bruceravel/demeter/master/examples/recipes/Methyltin/methyltin.xyz
+https://raw.githubusercontent.com/bruceravel/XAS-Education/master/Talks/pimst/images/PbTiO3/list.xyz

@@ -1,0 +1,8 @@
+http://upload.wikimedia.org/wikipedia/commons/b/b0/%22Bebop-rebop%22_early_bop_phrase.mid
+http://upload.wikimedia.org/wikipedia/commons/7/7f/Gliss.ogg
+http://upload.wikimedia.org/wikipedia/commons/9/98/Beepalert.wav
+http://upload.wikimedia.org/wikipedia/commons/b/b2/Bell-ring.flac
+http://api.modarchive.org/downloads.php?moduleid=149252#unreeeal_superhero_3.xm
+# Wikimedia Commons does not allow .mp3 files.
+# https://commons.wikimedia.org/wiki/Commons:File_types
+https://archive.org/download/scale1/s1.mp3

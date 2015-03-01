@@ -1,0 +1,36 @@
+# Text and ebooks
+http://www.gutenberg.org/cache/epub/1/pg1.txt
+http://www.gutenberg.org/cache/epub/1/pg1.epub
+http://www.gutenberg.org/cache/epub/1/pg1.mobi
+http://mako.cc/projects/utf8-tests/UTF-8-i_eat_glass.txt
+http://www.ic.unicamp.br/~stolfi/EXPORT/www/ISO-8859-1-Encoding.html
+# Daisy E-reader format.
+http://www.daisy.org/samples/202full-text-full-audio/gon-ruby-mp3.zip
+http://www.daisy.org/samples/dtbook-xml/great-painters-dtbook-2005-3.zip
+http://www.daisy.org/samples/202text-only/wipo-treaty-d202-text-only.zip
+# PDF and similar formats.
+http://www.irs.gov/pub/irs-pdf/f1040.pdf
+http://upload.wikimedia.org/wikipedia/commons/7/73/ASCII.pdf
+http://upload.wikimedia.org/wikipedia/commons/7/73/ASCII.pdf
+http://upload.wikimedia.org/wikipedia/commons/9/94/Factor_graph.pdf
+http://upload.wikimedia.org/wikipedia/commons/f/fa/Equil.pdf
+http://upload.wikimedia.org/wikipedia/commons/0/0c/Contactangle.pdf
+http://upload.wikimedia.org/wikipedia/commons/e/ea/Constitution_of_the_Republic_of_South_Africa_Amendment_Act_1995_from_Government_Gazette.djvu
+http://arxiv.org/hypertex/link.ps
+http://arxiv.org/hypertex/link.dvi
+# HTML and XML
+http://info.cern.ch/
+https://www.senate.gov/legislative/LIS/roll_call_lists/vote_menu_112_1.xml
+http://jblevins.org/log/xml-tools
+# MS Office formats.
+http://arxiv.org/e-print/1009.4027v1.docx
+http://ia801603.us.archive.org/13/items/UrduBooks_201302/TotalAyatInQuran.xlsx
+https://home.archive.org/~mang/local/amazon%20referral%20revenue_files/amazon%20referral%20revenue.pptx
+https://archive.org/download/2011-01-01WoordenLogos-rhema.pptx/2011-01-01WoordenLogos-rhema.pptx
+# OpenDocument files.
+http://ask.libreoffice.org/upfiles/14110339425827288.odb
+http://ask.libreoffice.org/upfiles/13719228396115488.odg
+http://ask.libreoffice.org/upfiles/13700816801195109.odp
+https://transparency.wikimedia.org/data/data_aug2014.ods
+http://upload.wikimedia.org/wikipedia/foundation/d/d1/WMF_Admin_Job_Advertisement_Head_of_Business_Development.odt
+https://github.com/javigomez/lib_tbs/blob/master/demo/demo_oo_formula.odf?raw=true
