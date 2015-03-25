@@ -13,6 +13,8 @@
 
 # TODO: convert this to python so that it is more portable.
 
+# TODO: menagerie of zip formats, e.g. .zip, .tar.gz, .iso, etc., etc.
+
 function download {
 	# Use --location so that it will resolve 302 errors,
 	# and use --remote-name so that we can just use the URI.
