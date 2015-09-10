@@ -8,12 +8,11 @@
 # TODO: figure out how to check if they've already been download,
 # maybe with md5sum or CRC checksum?
 # Or checking if the date is more recent?
+# Or use zsync or something?
 
-# TODO: move the URLS to a text file.
+# DONE: move the URLS to a text file.
 
 # TODO: convert this to python so that it is more portable.
-
-# TODO: menagerie of zip formats, e.g. .zip, .tar.gz, .iso, etc., etc.
 
 function download {
 	# Use --location so that it will resolve 302 errors,
