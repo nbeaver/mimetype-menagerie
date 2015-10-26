@@ -8,6 +8,17 @@ Goals
 
 At least one valid, representative file for every mimetype.
 
+--------
+Criteria
+--------
+
+In order of priority:
+
+#. Public domain or Creative Commons licensing.
+#. Correctly represents the mimetype.
+#. Relatively small file size (to save disk space and bandwidth).
+#. Stable URI (permalinks are best).
+
 -----------------
 Is that possible?
 -----------------
@@ -27,17 +38,6 @@ Why?
 A reference library of examples of filetypes is useful,
 and the amount of required disk space
 is quite reasonable on modern hard drives.
-
---------
-Criteria
---------
-
-In order of priority:
-
-#. Public domain or Creative Commons licensing.
-#. Correctly represents the mimetype.
-#. Relatively small file size (to save disk space and bandwidth).
-#. Stable URI (permalinks are best).
 
 -----
 Notes
