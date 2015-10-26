@@ -21,6 +21,9 @@
         "postscript" : [
             "http://arxiv.org/hypertex/link.ps"
         ],
+        "rtf" : [
+            "https://dumps.wikimedia.org/other/surveys/editorsurvey2012/Wikipedia_Editor_Survey_2012_-_documentation.rtf"
+        ],
         "vnd.ms-powerpoint" : [
             "https://upload.wikimedia.org/wikipedia/wikimania2006/c/c4/WM_2006_-_Security.ppt"
         ],
