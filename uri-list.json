@@ -120,6 +120,7 @@
             "http://code.w3.org/unicorn/browser/WebContent/style/init.css"
         ],
         "html" : [
+            "http://info.cern.ch/",
             "http://www.ic.unicamp.br/~stolfi/EXPORT/www/ISO-8859-1-Encoding.html",
             "http://jblevins.org/log/xml-tools"
         ],
