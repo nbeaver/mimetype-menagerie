@@ -12,9 +12,13 @@ At least one valid, representative file for every mimetype.
 Is that possible?
 -----------------
 
-The IANA lists about 1500 mimetypes,
+The IANA lists `about 1500 registered mimetypes`_,
 some of which are deprecated.
+There are many more which are unofficial.
+
 It's a big job, but not impossible.
+
+.. about 1500 registered mimetypes: https://www.iana.org/assignments/media-types/media-types.xhtml
 
 ----
 Why?
