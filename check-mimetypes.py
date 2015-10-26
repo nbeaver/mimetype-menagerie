@@ -2,7 +2,6 @@
 
 import mimetypes
 import os
-import warnings
 
 rootdir = 'media-types'
 for dirpath, dirnames, filenames in os.walk(rootdir):
