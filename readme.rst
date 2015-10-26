@@ -6,7 +6,23 @@ The Mimetype Menagerie
 Goals
 -----
 
-At least one representative file for every mimetype.
+At least one valid, representative file for every mimetype.
+
+-----------------
+Is that possible?
+-----------------
+
+The IANA lists about 1500 mimetypes,
+some of which are deprecated.
+It's a big job, but not impossible.
+
+----
+Why?
+----
+
+A reference library of examples of filetypes is useful,
+and the amount of required disk space
+is quite reasonable on modern hard drives.
 
 --------
 Criteria
@@ -18,3 +34,12 @@ In order of priority:
 #. Correctly represents the mimetype.
 #. Relatively small file size (to save disk space and bandwidth).
 #. Stable URI (permalinks are best).
+
+-----
+Notes
+-----
+
+Some mimetypes may not have any public domain examples,
+or may be patent-encumbered.
+These can be linked to,
+but will have to be omitted from the actual git repository.
