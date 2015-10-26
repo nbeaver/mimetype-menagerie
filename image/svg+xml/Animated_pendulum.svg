@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1"
+  xmlns:xlink="http://www.w3.org/1999/xlink"
+  width="100%" height="100%" viewBox="-100 0 200 260">
+<defs>
+	<marker id="EndArrow" viewBox="0 0 10 10" refX="10" refY="5"
+		markerUnits="strokeWidth" orient="auto"
+		markerWidth="10" markerHeight="10">
+		<polyline points="10,5 0,10 4,5 0,0 10,5" fill="black" />
+	</marker>
+</defs>
+<title>Animated pendulum</title>
+<defs>
+	<radialGradient id = "light" cx = "50%" cy = "50%" fx = "40%" fy = "35%" r = "65%">
+		<stop stop-color = "rgb(255,255,255)" offset = "0%"/>
+		<stop stop-color = "rgb(190,190,190)" offset = "40%"/>
+		<stop stop-color = "rgb(80,80,80)" offset = "100%"/>
+	</radialGradient>
+</defs>
+<line x1="0" x2="0" y1="10" y2="260" style="stroke:blue;stroke-width:.5" 
+	stroke-dasharray="5,3" />
+<g style="stroke:black;stroke-width:1;fill:none" >
+	<line x1="-100" x2="100" y1="10" y2="10" />
+	<g id="set1">
+		<line id="hash" x1="-100" x2="-85" y1="10" y2="0" />
+		<use xlink:href="#hash" transform="translate(20)" />
+		<use xlink:href="#hash" transform="translate(40)" />
+		<use xlink:href="#hash" transform="translate(60)" />
+		<use xlink:href="#hash" transform="translate(80)" />
+	</g>
+	<use xlink:href="#set1" transform="translate(100)" />
+	<g>
+		<line x1="0" x2="0" y1="10" y2="210" />
+		<circle cx="0" cy="230" r="20" fill="url(#light)" stroke="none"/>
+		<animateTransform attributeName="transform" attributeType="XML"
+			type="rotate" from="21,0,10" to="-21,0,10" 
+			calcMode="spline" id="to"
+			keySplines=".5 0 .5 1"
+			begin="0s; fro.end" dur="3s" fill="freeze" />
+		<animateTransform attributeName="transform" attributeType="XML"
+			type="rotate" from="-21,0,10" to="21,0,10" 
+			calcMode="spline" id="fro"
+			keySplines=".5 0 .5 1" 
+			begin="to.end" dur="3s" fill="freeze" />
+	</g>
+</g>
+</svg>

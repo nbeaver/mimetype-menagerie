@@ -1,0 +1,230 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE html
+    PUBLIC "-//W3C//DTD XHTML 1.1 plus MathML 2.0 plus SVG 1.1//EN"
+    "http://www.w3.org/2002/04/xhtml-math-svg/xhtml-math-svg.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+
+<head>
+  <meta name="viewport" content="width=device-width"/>
+  <link rel="stylesheet" type="text/css" href="/all.css"/>
+  <link rel="shortcut icon" href="/favicon.ico" type="image/png"/>
+  <link rel="alternate" type="application/atom+xml" href="/index.atom"/>
+  <script type="text/javascript" src="http://use.typekit.com/iur2xka.js"></script>
+  <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+  <title>Tools for Converting LaTeX to XML </title>
+</head>
+
+<body>
+
+<div id="header" class="noprint">
+  <span id="path">
+    <a href="/" accesskey="1" title="Homepage">jblevins.org</a> <span>/ <a href="/log/">log</a> / xml-tools</span>
+  </span>
+  <span id="nav">
+    <a href="/log/#archives" title="Older posts">Archives</a> &#183;
+    <a href="/index.atom" title="Atom feed">Feed</a> &#183;
+    <a href="https://twitter.com/jrblevin" title="@jrblevin">Twitter</a> &#183;
+    <a href="/" title="Homepage">About</a>
+  </span>
+</div>
+
+<div id="wrap">
+
+<div id="content">
+<div class="story">
+
+<h1>Tools for Converting LaTeX to XML </h1>
+<div class="meta dateline">December 10, 2008</div>
+
+<div class="story-icon" style="float:right;width:6em;height:6em;margin:-1.5em 0 1.5em 1.5em">
+<svg:svg version='1.1' viewBox='0 0 580 227' xmlns:svg='http://www.w3.org/2000/svg'>
+<svg:path d='M121,111h-4c-2,24-6,56-48,56h-23c-10,0-10-1-10-9v-136c0-9,0-12,19-12h5v-5h-32h-28v5c17,0,20,0,20,12v134c0,11-3,11-20,11v6h115M123,3c-1-3-2-3-4-3c-2,0-2,0-3,3l-44,124c-4,11-12,13-19,13v5h16h18v-5c-10,0-11-7-11-9c0-2,0-3,1-4l11-32h54l12,36l1,4c0,5-9,5-13,5v5h23h21v-5c-11,0-15,0-17-7zM115,19l25,71h-51M312,5h-143l-4,55h4c3-41,7-49,45-49h14c5,1,5,4,5,10v135c0,9-1,11-22,11h-7v6h37h36v-6h-7c-21,0-21-2-21-11v-135c0-6,0-9,4-10h14c38,0,41,8,45,49h4M435,165h-4c-6,36-9,56-52,56h-35c-10,0-10-1-10-9v-70h23c24,0,26,9,26,30h4v-65h-4c0,21-2,29-26,29h-23v-61c0-8,0-10,10-10h34c38,0,43,16,46,48h5l-6-54h-126v6c18,0,21,0,21,12v133c0,11-3,11-21,11v6h129M502,80l37-53c3-6,11-16,31-16v-6h-21h-24v6c7,0,9,5,9,9c0,3-1,5-3,8l-32,47l-37-54c-2-2-2-3-2-4c0-2,3-6,11-6v-6h-28h-25v6c14,0,18,0,24,8l47,70l-43,63c-10,15-26,15-31,15v6h21h24v-6c-7,0-10-5-10-9c0-3,2-5,3-7l40-58l43,64c2,2,2,3,2,4c0,2-3,6-11,7v5h28h25v-5c-16,0-19-2-24-9' fill='#000'/>
+</svg:svg>
+
+</div>
+<p>I spent some time surveying the available tools for converting LaTeX
+to <abbr title="Extensible Hypertext Markup Language">XHTML</abbr>+<acronym title="Mathematical Markup Language">MathML</acronym> or, more generally, LaTeX to <abbr title="Extensible Markup Language">XML</abbr>. My criteria were
+the following:</p>
+
+<ul>
+<li>The project must be free and open source.</li>
+<li>It should produce clean, semantic <abbr>XHTML</abbr>+<acronym>MathML</acronym> or <abbr>XML</abbr> output.</li>
+<li>It should be able to handle macro definitions using standard LaTeX commands.</li>
+<li>The possibility of adding support for additional LaTeX packages
+ (e.g., <code>natbib</code> or <code>hyperref</code>) is a plus.</li>
+<li>Tools that require little or no manual intervention or modification
+ of the LaTeX source are preferred.</li>
+</ul>
+
+<p>I was pleasantly surprised at how many projects I found that actually
+met most of these criteria. Those that I am aware of are described in
+more detail below.</p>
+
+<p>Overall, I was most impressed with <a href="http://dlmf.nist.gov/LaTeXML/">LaTeXML</a>. In my opinion, its
+usage is the most straightforward and it produces very clean, general
+<abbr>XML</abbr> output which can produce easily customizable <abbr>XHTML</abbr>+<acronym>MathML</acronym>
+documents.</p>
+
+<h2>LaTeXML</h2>
+
+<p><a href="http://dlmf.nist.gov/LaTeXML/">LaTeXML</a> is Perl module which parses the actual LaTeX document and
+emits <abbr>XML</abbr> output for later post-processing (for example, for conversion
+to <abbr>XHTML</abbr>+<acronym>MathML</acronym>). With a proper XSLT stylesheet, one can obtain custom
+<abbr>XHTML</abbr>+<acronym>MathML</acronym> output. The <a href="http://dlmf.nist.gov/LaTeXML/">LaTeXML homepage</a> itself was generated
+using LaTeXML. The project is still active (at the time of writing), it&#x02019;s
+very well <a href="http://dlmf.nist.gov/LaTeXML/manual/">documented</a> and it has a <a href="https://trac.mathweb.org/LaTeXML/">Trac</a>
+and a <a href="http://lists.jacobs-university.de/mailman/listinfo/project-latexml">mailing list</a>.</p>
+
+<p>If you use Debian GNU/Linux, you can install the relevant dependencies with</p>
+
+<pre><code>sudo apt-get install libparse-recdescent-perl libimage-magick-perl \
+  libxml-libxml-common-perl libxml-libxslt-perl
+</code></pre>
+
+<p>The package is installed using the usual procedure for Perl modules:</p>
+
+<pre><code>perl Makefile.PL
+make
+make test
+sudo make install
+</code></pre>
+
+<p>The usage is straightforward. First convert the LaTeX document, say
+<code>mydoc.tex</code> to <abbr>XML</abbr> and then post-process the <abbr>XML</abbr>, converting it to
+<abbr>XHTML</abbr>+<acronym>MathML</acronym>:</p>
+
+<pre><code>latexml --dest=mydoc.xml mydoc
+latexmlpost -dest=somewhere/mydoc.xhtml mydoc.xml
+</code></pre>
+
+<p><a href="http://dlmf.nist.gov/LaTeXML/">LaTeXML</a> is a project of the NIST and is therefore in
+the public domain.</p>
+
+<h2>Tralics</h2>
+
+<p><a href="http://www-sop.inria.fr/apics/tralics/">Tralics</a> is written in C++ and also directly parses the LaTeX
+source (and it&#x02019;s also extremely fast). It is licensed under the
+French <a href="http://www.cecill.info/index.en.html">CeCill</a> open source license which is <a href="http://www.fsf.org/licensing/licenses/"><abbr title="GNU General Public License">GPL</abbr>-compatible</a>.</p>
+
+<p>Compiling it is straightforward:</p>
+
+<pre><code>tar zxvf tralics-src-2.13.5.tar.gz
+cd tralics-2.13.5/src
+make
+</code></pre>
+
+<p>To convert a LaTeX document to <abbr>XML</abbr>:</p>
+
+<pre><code>tralics doc.tex
+</code></pre>
+
+<p>A file called <code>doc.xml</code> will be created. Tralics handles any unknown
+commands from unsupported package such as <code>hyperref</code>, for example, by
+including an <code>&lt;error&gt;</code> tag:</p>
+
+<pre><code>&lt;error n='\hypersetup' l='35' c='Undefined command'/&gt;
+</code></pre>
+
+<p>So, apparently it should never fail to parse the document as long
+as it is valid LaTeX.</p>
+
+<p>The <abbr>XML</abbr> file can then be converted to <abbr>XHTML</abbr>+<acronym>MathML</acronym> using a stylesheet.
+Several examples are provided in the &#x0201C;Extra files&#x0201D; package.</p>
+
+<h2>Hermes</h2>
+
+<p><a href="http://hermes.roua.org/">Hermes</a> is a grammar-based <abbr title="Device Independent file format">DVI</abbr>-parser for translating LaTeX to
+Unicode-encoded <abbr>XML</abbr>+<acronym>MathML</acronym>. It works by first including a set of TeX
+macros in the original LaTeX document which insert specials in the <abbr>DVI</abbr>
+file. It then constructs <abbr>XML</abbr> output by parsing the semantic <abbr>DVI</abbr> file.</p>
+
+<p>Some examples are provided <a href="http://hermes.aei.mpg.de/">here</a>. In
+particular, there is a
+<a href="http://hermes.aei.mpg.de/arxiv/">collection of articles</a> from
+<a href="http://www.arxiv.org/archive/math">arxiv-math</a> that were translated
+to <abbr>XHTML</abbr>+<acronym>MathML</acronym>.</p>
+
+<p>Hermes is very complete in terms of functionality, but there are still
+a few glitches here and there, namely it has trouble handling spaces
+properly (see some of the examples). It also requires two steps just
+to get the <abbr>XML</abbr> file as you first have to create a &#x0201C;seed&#x0201D; LaTeX document
+(which essentially just adds a line <code>\include dtx</code> line which
+includes the extra macro definitions).</p>
+
+<h2>TeX4ht</h2>
+
+<p><a href="http://www.cse.ohio-state.edu/~gurari/TeX4ht/">TeX4ht</a>, available in the Debian package <code>tex4ht</code>, is probably the
+most widely used LaTeX to (X)<abbr title="Hypertext Markup Language">HTML</abbr> tool. It supports conversion to
+<abbr>HTML</abbr>, <abbr>XHTML</abbr>+<acronym>MathML</acronym>, OpenDocument, and DocBook. Direct <abbr>XHTML</abbr>+<acronym>MathML</acronym>
+conversion is possible using a command like the following:</p>
+
+<pre><code>htlatex filename &quot;xhtml,mathml&quot; &quot; -cunihtf&quot; &quot;-cvalidate&quot;
+</code></pre>
+
+<p>See the <a href="http://www.cse.ohio-state.edu/~gurari/TeX4ht/">documentation</a> for details about the available options.</p>
+
+<p>The direct <abbr>XHTML</abbr>+<acronym>MathML</acronym> conversion looks very nice but the output
+didn&#x02019;t seem very clean or semantic. It seems that it&#x02019;s possible to
+heavily customize the output if you like, but the methods for doing so
+aren&#x02019;t exactly obvious. I didn&#x02019;t test its DocBook conversion,
+although this may also be a promising route.</p>
+
+<h2>LXir</h2>
+
+<p><a href="http://www.lxir-latex.org">LXir</a> is another <abbr>DVI</abbr>-parsing LaTeX to <abbr>XML</abbr> translator. You must
+first include <code>\RequirePackage{lxir}</code> in your LaTeX document and
+run <code>latex</code> to obtain a <abbr>DVI</abbr> file. Then running <code>lxir doc.dvi</code>
+will produce an <abbr>XML</abbr> file that can be processed using <code>xsltproc</code>.</p>
+
+<p><a href="http://www.lxir-latex.org">LXir</a> looks promising but it still has some problems. It will fail
+if it encounters commands from any unsupported packages. Even after
+removing all external package dependencies from my document, LXir
+still failed to process the standard <code>\author{foo \and bar}</code>
+structure. Once I removed that, there were still errors in the
+generated <acronym>MathML</acronym>.</p>
+
+<p>Overall LXir looks promising, and I think it&#x02019;s a project worth keeping
+an eye on, but it doesn&#x02019;t seem ready for production use (at least not
+for anything containing mathematics).</p>
+
+<h2>GELLMU</h2>
+
+<p>There is also an alternative markup language called <a href="http://www.albany.edu/~hammond/gellmu/">GELLMU</a> which
+supports <abbr>XHTML</abbr>+<acronym>MathML</acronym>, <abbr>HTML</abbr>, <abbr title="Portable Document Format">PDF</abbr>, and <abbr>DVI</abbr> output. While it does meet
+most of my criteria, I&#x02019;d rather be able to write real LaTeX, rather
+than pseudo-LaTeX. It&#x02019;s certainly debatable but I consider LaTeX to
+be an archival format. At the very least an acceptable LaTeX-to-<abbr>XML</abbr>
+tool will eventually emerge. Clean LaTeX code is very structured and
+LaTeX is going to be with us for a very long time. Thus, it would
+simplify things if I were able to store my originals in LaTeX format.</p>
+
+</div>
+
+</div>
+
+<div id="footer">
+  <span class="meta">
+    Copyright &#169; 2004&#8211;2015
+    <span id="author"><a rel="author" href="/">Jason Blevins</a></span>
+    
+  </span>
+</div>
+
+</div>
+
+<script type="text/javascript">
+var clicky_site_ids = clicky_site_ids || [];
+clicky_site_ids.push(66365798);
+(function() {
+  var s = document.createElement('script');
+  s.type = 'text/javascript';
+  s.async = true;
+  s.src = '//static.getclicky.com/js';
+  ( document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0] ).appendChild( s );
+})();
+</script>
+<noscript><p><img alt="Clicky" width="1" height="1" src="//in.getclicky.com/66365798ns.gif" /></p></noscript>
+
+</body>
+
+</html>

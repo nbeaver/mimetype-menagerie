@@ -1,0 +1,350 @@
+<html>
+<head>
+<title>ISO-8859-1 (ISO Latin 1) Character Encoding</title>
+</head>
+<body bgcolor="#FFFFFF">
+
+<h1> ISO-8859-1 (ISO Latin 1) Character Encoding </h1>
+
+<h2>Contents</h2>
+
+<ul>
+<li> <a href="#broadview">The characters at a glance</a>
+<li> <a href="#table">Character codes and names</a>
+<li> <a href="#html">Notes for html documents</a>
+<li> <a href="#misc">Other notes</a>
+<li> <a href="#refs">Additional references</a>
+</ul>
+
+<a name="broadview">
+<h2>The characters at a glance</h2>
+
+<p> Here are all the printable characters, in collating order:</p>
+<b>
+<big>
+<pre>
+        ! " # $ % & ' ( ) * + , - . / 
+      0 1 2 3 4 5 6 7 8 9 : ; < = > ? @
+      A B C D E F G H I J K L M N O P Q R S T U V W X Y Z
+      [ \ ] ^ _ `
+      a b c d e f g h i j k l m n o p q r s t u v w x y z 
+      { | } ~
+
+        ¡ ¢ £ ¤ ¥ ¦ § ¨ © ª « ¬ ­ ® ¯ 
+      ° ± ² ³ ´ µ ¶ · ¸ ¹ º » ¼ ½ ¾ ¿
+
+      À Á Â Ã Ä Å Æ Ç È É Ê Ë Ì Í Î Ï Ð Ñ Ò Ó Ô Õ Ö
+      ×
+      Ø Ù Ú Û Ü Ý Þ
+      ß
+      à á â ã ä å æ ç è é ê ë ì í î ï ð ñ ò ó ô õ ö
+      ÷
+      ø ù ú û ü ý þ
+      ÿ
+       
+</pre>
+</big>
+</b>
+<p>The first six rows are the ASCII character set.</p>
+<p>Note the
+ordinary ASCII space (before `<b><tt>!</tt></b>') and the ISO Latin-1
+non-breaking space
+(before `<b><tt>¡</tt></b>')</p>
+
+<a name="table">
+<h2>Character codes and names</h2>
+
+<hr>
+
+<p>The columns show, in order:</p>
+<ul>
+  <li> <tt>HTML</tt>: the HTML notation (decimal);
+  <li> <tt>OCTL</tt>: the C/Modula-3 octal notation;
+  <li> <tt>HEX</tt>: the hexadecimal code, as used e.g. in MIME quoted-printable encoding; 
+  <li> <tt>CMP</tt>: the Sun/X11 "Compose" key combinations;
+  <li> <tt>CHR</tt>: the charater itself, when HTML-printable;
+  <li> <tt>MEANING</tt>: the ISO-8859-1 (and ASCII) definition.</p>
+</ul>
+
+<hr> 
+
+<b>
+<pre>
+HTML     OCTL   HEX   CMP   CHR   MEANING
+------ + ---- + --- + --- + --- + ------------------------------
+&amp;#000; | \000 | =00 |     |     | Invalid (ASCII NUL)
+&amp;#001; | \001 | =01 |     |     | Unused (ASCII SOH)
+&amp;#002; | \002 | =02 |     |     | Unused (ASCII STX)
+&amp;#003; | \003 | =03 |     |     | Unused (ASCII ETX)
+&amp;#004; | \004 | =04 |     |     | Unused (ASCII EOT)
+&amp;#005; | \005 | =05 |     |     | Unused (ASCII ENQ)
+&amp;#006; | \006 | =06 |     |     | Unused (ASCII ACK)
+&amp;#007; | \007 | =07 |     |     | Unused (ASCII BEL, audible bell)
+&amp;#008; | \010 | =08 |     |     | Unused (ASCII BS, backspace)
+&amp;#009; | \011 | =09 |     |     | Horizontal tab (ASCII HT)
+&amp;#010; | \012 | =0A |     |     | Line feed (ASCII NL, newline)
+&amp;#011; | \013 | =0B |     |     | Unused (ASCII VT, vertical tab)
+&amp;#012; | \014 | =0C |     |     | Unused (ASCII NP, new page)
+&amp;#013; | \015 | =0D |     |     | Carriage Return (ASCII CR)
+&amp;#014; | \016 | =0E |     |     | Unused (ASCII SO)
+&amp;#015; | \017 | =0F |     |     | Unused (ASCII SI)
+&amp;#016; | \020 | =10 |     |     | Unused (ASCII DLE)
+&amp;#017; | \021 | =11 |     |     | Unused (ASCII DC1)
+&amp;#018; | \022 | =12 |     |     | Unused (ASCII DC2)
+&amp;#019; | \023 | =13 |     |     | Unused (ASCII DC3)
+&amp;#020; | \024 | =14 |     |     | Unused (ASCII DC4)
+&amp;#021; | \025 | =15 |     |     | Unused (ASCII NAK)
+&amp;#022; | \026 | =16 |     |     | Unused (ASCII SYN)
+&amp;#023; | \027 | =17 |     |     | Unused (ASCII ETB)
+&amp;#024; | \030 | =18 |     |     | Unused (ASCII CAN)
+&amp;#025; | \031 | =19 |     |     | Unused (ASCII EM)
+&amp;#026; | \032 | =1A |     |     | Unused (ASCII SUB)
+&amp;#027; | \033 | =1B |     |     | Unused (ASCII ESC, escape)
+&amp;#028; | \034 | =1C |     |     | Unused (ASCII FS)
+&amp;#029; | \035 | =1D |     |     | Unused (ASCII GS)
+&amp;#030; | \036 | =1E |     |     | Unused (ASCII RS)
+&amp;#031; | \037 | =1F |     |     | Unused (ASCII US)
+&amp;#032; | \040 | =20 |     | (&#032;) | Space (ASCII SP)
+&amp;#033; | \041 | =21 |     | (&#033;) | Exclamation mark
+&amp;#034; | \042 | =22 |     | (&#034;) | Quotation mark (&amp;quot;)
+&amp;#035; | \043 | =23 |     | (&#035;) | Number sign
+&amp;#036; | \044 | =24 |     | (&#036;) | Dollar sign
+&amp;#037; | \045 | =25 |     | (&#037;) | Percent sign
+&amp;#038; | \046 | =26 |     | (&#038;) | Ampersand (&amp;amp;)
+&amp;#039; | \047 | =27 |     | (&#039;) | Apostrophe (right single quote)
+&amp;#040; | \050 | =28 |     | (&#040;) | Left parenthesis
+&amp;#041; | \051 | =29 |     | (&#041;) | Right parenthesis
+&amp;#042; | \052 | =2A |     | (&#042;) | Asterisk
+&amp;#043; | \053 | =2B |     | (&#043;) | Plus sign
+&amp;#044; | \054 | =2C |     | (&#044;) | Comma
+&amp;#045; | \055 | =2D |     | (&#045;) | Hyphen
+&amp;#046; | \056 | =2E |     | (&#046;) | Period (fullstop)
+&amp;#047; | \057 | =2F |     | (&#047;) | Solidus (slash)
+&amp;#048; | \060 | =30 |     | (&#048;) | Digit 0
+. . .
+&amp;#057; | \071 | =39 |     | (&#057;) | Digit 9
+&amp;#058; | \072 | =3A |     | (&#058;) | Colon
+&amp;#059; | \073 | =3B |     | (&#059;) | Semi-colon
+&amp;#060; | \074 | =3C |     | (&#060;) | Less than (&amp;lt;)
+&amp;#061; | \075 | =3D |     | (&#061;) | Equals sign
+&amp;#062; | \076 | =3E |     | (&#062;) | Greater than (&amp;gt;)
+&amp;#063; | \077 | =3F |     | (&#063;) | Question mark
+&amp;#064; | \100 | =40 |     | (&#064;) | Commercial at-sign
+&amp;#065; | \101 | =41 |     | (&#065;) | Uppercase letter A
+. . .                          
+&amp;#090; | \132 | =5A |     | (&#090;) | Uppercase letter Z
+&amp;#091; | \133 | =5B |     | (&#091;) | Left square bracket
+&amp;#092; | \134 | =5C |     | (&#092;) | Reverse solidus (backslash)
+&amp;#093; | \135 | =5D |     | (&#093;) | Right square bracket
+&amp;#094; | \136 | =5E |     | (&#094;) | Caret
+&amp;#095; | \137 | =5F |     | (&#095;) | Horizontal bar (underscore)
+&amp;#096; | \140 | =60 |     | (&#096;) | Reverse apostrophe (left single quote)
+&amp;#097; | \141 | =61 |     | (&#097;) | Lowercase letter a
+. . .                          
+&amp;#122; | \172 | =7A |     | (&#122;) | Lowercase letter z
+&amp;#123; | \173 | =7B |     | (&#123;) | Left curly brace
+&amp;#124; | \174 | =7C |     | (&#124;) | Vertical bar
+&amp;#125; | \175 | =7D |     | (&#125;) | Right curly brace
+&amp;#126; | \176 | =7E |     | (&#126;) | Tilde
+&amp;#127; | \177 | =7F |     |     | Unused (ASCII DEL)
+&amp;#128; | \200 | =80 |     |     | Unused
+&amp;#129; | \201 | =81 |     |     | Unused
+&amp;#130; | \202 | =82 |     |     | Unused
+&amp;#131; | \203 | =83 |     |     | Unused
+&amp;#132; | \204 | =84 |     |     | Unused
+&amp;#133; | \205 | =85 |     |     | Unused
+&amp;#134; | \206 | =86 |     |     | Unused
+&amp;#135; | \207 | =87 |     |     | Unused
+&amp;#136; | \210 | =88 |     |     | Unused
+&amp;#137; | \211 | =89 |     |     | Unused
+&amp;#138; | \212 | =8A |     |     | Unused
+&amp;#139; | \213 | =8B |     |     | Unused
+&amp;#140; | \214 | =8C |     |     | Unused
+&amp;#141; | \215 | =8D |     |     | Unused
+&amp;#142; | \216 | =8E |     |     | Unused
+&amp;#143; | \217 | =8F |     |     | Unused
+&amp;#144; | \220 | =90 |     |     | Unused
+&amp;#145; | \221 | =91 |     |     | Unused
+&amp;#146; | \222 | =92 |     |     | Unused
+&amp;#147; | \223 | =93 |     |     | Unused
+&amp;#148; | \224 | =94 |     |     | Unused
+&amp;#149; | \225 | =95 |     |     | Unused
+&amp;#150; | \226 | =96 |     |     | Unused
+&amp;#151; | \227 | =97 |     |     | Unused
+&amp;#152; | \230 | =98 |     |     | Unused
+&amp;#153; | \231 | =99 |     |     | Unused
+&amp;#154; | \232 | =9A |     |     | Unused
+&amp;#155; | \233 | =9B |     |     | Unused
+&amp;#156; | \234 | =9C |     |     | Unused
+&amp;#157; | \235 | =9D |     |     | Unused
+&amp;#158; | \236 | =9E |     |     | Unused
+&amp;#159; | \237 | =9F |     |     | Unused
+&amp;#160; | \240 | =A0 |     | (&#160;) | Non-breaking space (&amp;nbsp;)
+&amp;#161; | \241 | =A1 | ! ! | (&#161;) | Inverted exclamation
+&amp;#162; | \242 | =A2 | c / | (&#162;) | Cent sign
+&amp;#163; | \243 | =A3 | l - | (&#163;) | Pound sterling
+&amp;#164; | \244 | =A4 | o x | (&#164;) | General currency sign
+&amp;#165; | \245 | =A5 | y - | (&#165;) | Yen sign
+&amp;#166; | \246 | =A6 | | | | (&#166;) | Broken vertical bar
+&amp;#167; | \247 | =A7 | s o | (&#167;) | Section sign
+&amp;#168; | \250 | =A8 | " " | (&#168;) | Umlaut (dieresis)
+&amp;#169; | \251 | =A9 | c o | (&#169;) | Copyright
+&amp;#170; | \252 | =AA | - a | (&#170;) | Feminine ordinal
+&amp;#171; | \253 | =AB | &lt; &lt; | (&#171;) | Left angle quote, guillemotleft
+&amp;#172; | \254 | =AC | - , | (&#172;) | Not sign
+&amp;#173; | \255 | =AD | - - | (&#173;) | Soft hyphen
+&amp;#174; | \256 | =AE | r o | (&#174;) | Registered trademark
+&amp;#175; | \257 | =AF | ^ - | (&#175;) | Macron accent
+&amp;#176; | \260 | =B0 | ^ * | (&#176;) | Degree sign
+&amp;#177; | \261 | =B1 | + - | (&#177;) | Plus or minus
+&amp;#178; | \262 | =B2 | ^ 2 | (&#178;) | Superscript two
+&amp;#179; | \263 | =B3 | ^ 3 | (&#179;) | Superscript three
+&amp;#180; | \264 | =B4 | \ \ | (&#180;) | Acute accent
+&amp;#181; | \265 | =B5 | / u | (&#181;) | Micro sign
+&amp;#182; | \266 | =B6 | P ! | (&#182;) | Paragraph sign
+&amp;#183; | \267 | =B7 | ^ . | (&#183;) | Middle dot
+&amp;#184; | \270 | =B8 | , , | (&#184;) | Cedilla
+&amp;#185; | \271 | =B9 | ^ 1 | (&#185;) | Superscript one
+&amp;#186; | \272 | =BA | _ o | (&#186;) | Masculine ordinal
+&amp;#187; | \273 | =BB | &gt; &gt; | (&#187;) | Right angle quote, guillemotright
+&amp;#188; | \274 | =BC | 1 4 | (&#188;) | Fraction one-fourth
+&amp;#189; | \275 | =BD | 1 2 | (&#189;) | Fraction one-half
+&amp;#190; | \276 | =BE | 3 4 | (&#190;) | Fraction three-fourths
+&amp;#191; | \277 | =BF | ? ? | (&#191;) | Inverted question mark
+&amp;#192; | \300 | =C0 | A ` | (&#192;) | Capital A, grave accent
+&amp;#193; | \301 | =C1 | A ' | (&#193;) | Capital A, acute accent
+&amp;#194; | \302 | =C2 | A ^ | (&#194;) | Capital A, circumflex accent
+&amp;#195; | \303 | =C3 | A ~ | (&#195;) | Capital A, tilde
+&amp;#196; | \304 | =C4 | A " | (&#196;) | Capital A, dieresis or umlaut mark
+&amp;#197; | \305 | =C5 | A * | (&#197;) | Capital A, ring
+&amp;#198; | \306 | =C6 | A E | (&#198;) | Capital AE dipthong (ligature)
+&amp;#199; | \307 | =C7 | C , | (&#199;) | Capital C, cedilla
+&amp;#200; | \310 | =C8 | E ` | (&#200;) | Capital E, grave accent
+&amp;#201; | \311 | =C9 | E ' | (&#201;) | Capital E, acute accent
+&amp;#202; | \312 | =CA | E ^ | (&#202;) | Capital E, circumflex accent
+&amp;#203; | \313 | =CB | E " | (&#203;) | Capital E, dieresis or umlaut mark
+&amp;#204; | \314 | =CC | I ` | (&#204;) | Capital I, grave accent
+&amp;#205; | \315 | =CD | I ' | (&#205;) | Capital I, acute accent
+&amp;#206; | \316 | =CE | I ^ | (&#206;) | Capital I, circumflex accent
+&amp;#207; | \317 | =CF | I " | (&#207;) | Capital I, dieresis or umlaut mark
+&amp;#208; | \320 | =D0 | D - | (&#208;) | Capital Eth, Icelandic
+&amp;#209; | \321 | =D1 | N ~ | (&#209;) | Capital N, tilde
+&amp;#210; | \322 | =D2 | O ` | (&#210;) | Capital O, grave accent
+&amp;#211; | \323 | =D3 | O ' | (&#211;) | Capital O, acute accent
+&amp;#212; | \324 | =D4 | O ^ | (&#212;) | Capital O, circumflex accent
+&amp;#213; | \325 | =D5 | O ~ | (&#213;) | Capital O, tilde
+&amp;#214; | \326 | =D6 | O " | (&#214;) | Capital O, dieresis or umlaut mark
+&amp;#215; | \327 | =D7 | x x | (&#215;) | Multiply sign
+&amp;#216; | \330 | =D8 | O / | (&#216;) | Capital O, slash
+&amp;#217; | \331 | =D9 | U ` | (&#217;) | Capital U, grave accent
+&amp;#218; | \332 | =DA | U ' | (&#218;) | Capital U, acute accent
+&amp;#219; | \333 | =DB | U ^ | (&#219;) | Capital U, circumflex accent
+&amp;#220; | \334 | =DC | U " | (&#220;) | Capital U, dieresis or umlaut mark
+&amp;#221; | \335 | =DD | Y ' | (&#221;) | Capital Y, acute accent
+&amp;#222; | \336 | =DE | P | | (&#222;) | Capital THORN, Icelandic
+&amp;#223; | \337 | =DF | s s | (&#223;) | Small sharp s, German (sz ligature)
+&amp;#224; | \340 | =E0 | a ` | (&#224;) | Small a, grave accent
+&amp;#225; | \341 | =E1 | a ' | (&#225;) | Small a, acute accent
+&amp;#226; | \342 | =E2 | a ^ | (&#226;) | Small a, circumflex accent
+&amp;#227; | \343 | =E3 | a ~ | (&#227;) | Small a, tilde
+&amp;#228; | \344 | =E4 | a " | (&#228;) | Small a, dieresis or umlaut mark
+&amp;#229; | \345 | =E5 | a * | (&#229;) | Small a, ring
+&amp;#230; | \346 | =E6 | a e | (&#230;) | Small ae dipthong (ligature)
+&amp;#231; | \347 | =E7 | c , | (&#231;) | Small c, cedilla
+&amp;#232; | \350 | =E8 | e ` | (&#232;) | Small e, grave accent
+&amp;#233; | \351 | =E9 | e ' | (&#233;) | Small e, acute accent
+&amp;#234; | \352 | =EA | e ^ | (&#234;) | Small e, circumflex accent
+&amp;#235; | \353 | =EB | e " | (&#235;) | Small e, dieresis or umlaut mark
+&amp;#236; | \354 | =EC | i ` | (&#236;) | Small i, grave accent
+&amp;#237; | \355 | =ED | i ' | (&#237;) | Small i, acute accent
+&amp;#238; | \356 | =EE | i ^ | (&#238;) | Small i, circumflex accent
+&amp;#239; | \357 | =EF | i " | (&#239;) | Small i, dieresis or umlaut mark
+&amp;#240; | \360 | =F0 | d - | (&#240;) | Small eth, Icelandic
+&amp;#241; | \361 | =F1 | n ~ | (&#241;) | Small n, tilde
+&amp;#242; | \362 | =F2 | o ` | (&#242;) | Small o, grave accent
+&amp;#243; | \363 | =F3 | o ' | (&#243;) | Small o, acute accent
+&amp;#244; | \364 | =F4 | o ^ | (&#244;) | Small o, circumflex accent
+&amp;#245; | \365 | =F5 | o ~ | (&#245;) | Small o, tilde
+&amp;#246; | \366 | =F6 | o " | (&#246;) | Small o, dieresis or umlaut mark
+&amp;#247; | \367 | =F7 | - : | (&#247;) | Division sign
+&amp;#248; | \370 | =F8 | o / | (&#248;) | Small o, slash
+&amp;#249; | \371 | =F9 | u ` | (&#249;) | Small u, grave accent
+&amp;#250; | \372 | =FA | u ' | (&#250;) | Small u, acute accent
+&amp;#251; | \373 | =FB | u ^ | (&#251;) | Small u, circumflex accent
+&amp;#252; | \374 | =FC | u " | (&#252;) | Small u, dieresis or umlaut mark
+&amp;#253; | \375 | =FD | y ' | (&#253;) | Small y, acute accent
+&amp;#254; | \376 | =FE | p | | (&#254;) | Small thorn, Icelandic
+&amp;#255; | \377 | =FF | y " | (&#255;) | Small y, dieresis or umlaut mark
+</pre>
+</b>
+
+<a name="html">
+<h2>Notes for HTML documents</h2>
+
+<ol>
+
+<li><p>HTML entity names are given in the "MEANING" column only for
+ampersand, quote, less than, and greater than, which are significant
+in HTML syntax; and for the non-breaking space, which may be confused
+with ordinary space.  HTML entity names exist for many other
+characters, but they are superfluous: the ISO-8859-1 eight-bit codes
+will work, by definition, on any browser.</p>
+
+<li> <p>The characters carriage return (ASCII CR) and line feed (ASCII
+NL, newline) are equivalent; they are treated as whitespace, except in
+<tt>&lt;pre&gt;</tt> contexts, where they force a line break.
+(However, a line feed is ignored if it immediately follows a carriage
+return.)</p>
+
+<li> <p>The horizontal tab character (ASCII HT) skips to the next
+tabbing column in <tt>&lt;pre&gt;</tt> contexts, and is treated as
+whitespace elsewhere.</p>
+
+<li> <p>The non-breaking space (&amp;nbsp;) is honored even in
+non-<tt>&lt;pre&gt;</tt> contexts, and can be used to insert extra
+space between words, images, etc., like this:
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|.</p>
+
+</ol>
+
+<a name="misc">
+<h2>Other notes</h2>
+
+<ol>
+<li> <p>Alternative Sun/X11 "Compose" sequences for the Icelandic "thorn" 
+are "t h" (&#254;, lowercase) and "T H" (&#222;, uppercase).</p>
+
+<li> <p>Note that the Sun/X11 "Compose" sequence for masculine ordinal (&#186;)
+uses an underscore, while the feminine ordinal (&#170;) uses a minus sign. 
+It takes a lot of imagination to come up with such ideas...</p>
+</ol>
+
+<a name="refs">
+<h2>Additional references</h2>
+
+<ul>
+  <li> 
+    <a href="http://www.forwiss.uni-passau.de/personen/ramsch/">Martin Ramsch</a>'s
+    <a href="http://www.uni-passau.de/~ramsch/iso8859-1.html">iso8859-1 table</a>.
+  <li> 
+    The
+    <a href="http://www.w3.org/hypertext/WWW/MarkUp/html-spec/">HTML 2.0 Standard</a> 
+    [<a href="http://www.w3.org/hypertext/WWW/MarkUp/html-spec/html-spec_9.html#SEC99">Character Entity Sets</a>]
+    [<a href="http://www.w3.org/hypertext/WWW/MarkUp/html-spec/html-spec_13.html#SEC106">HTML Coded Character Set</a>]
+  <li> The
+    <a href="http://www.w3.org/hypertext/WWW/MarkUp/html3/CoverPage.html">HTML 3.0 specification</a> 
+    [<a href="http://www.w3.org/hypertext/WWW/MarkUp/html3/latin1.html">Latin-1 Character Entities</a>]
+  <li> The 
+    <a href="http://www.w3.org/hypertext/WWW/MarkUp/HTMLPlus/htmlplus_1.html">HTML+ Discussion Document</a>
+    [<a href="http://www.w3.org/hypertext/WWW/MarkUp/HTMLPlus/htmlplus_59.html">Appendix II</a>]
+  <li> An exhaustive
+    <a href="http://www.bbsinc.com/iso8859.html">entity table</a> 
+    including HTML 2.0, HTML3.0, HTML+, with Postscript equivalents.
+</ul>
+
+<hr>
+Composed by <a href="mailto:stolfi@dcc.unicamp.br">J. Stolfi</a>
+from several sources found throughout the net.
+
+</body>
+</html>
