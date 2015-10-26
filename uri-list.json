@@ -115,6 +115,23 @@
             "http://arxiv.org/html/cond-mat/9903007v4/fig3.eps"
         ]
     },
+    "message" : {
+        "rfc822" : [
+            "https://raw.githubusercontent.com/danchoi/min_mail/master/test/fixtures/reply_all.eml",
+            "https://raw.githubusercontent.com/bigohstudios/tictactoe/master/spam/TESTING/TEST_00731.eml"
+        ]
+    },
+    "model" : {
+        "vrml" : [
+            "http://www.web3d.org/x3d-resources/content/examples/HelloWorld.wrl"
+        ],
+        "x3d+binary" : [
+            "http://www.web3d.org/x3d-resources/content/examples/HelloWorld.x3db"
+        ],
+        "x3d+xml" : [
+            "http://www.web3d.org/x3d-resources/content/examples/HelloWorld.x3d"
+        ]
+    },
     "text" : {
         "css" : [
             "http://code.w3.org/unicorn/browser/WebContent/style/init.css"
