@@ -8,6 +8,9 @@
             "http://dir.w3.org/themes/2014/w3/js/popover.js",
             "http://dir.w3.org/directory/libs/js/jquery.base64.min.js"
         ],
+        "msword" : [
+            "https://upload.wikimedia.org/wikipedia/meta/2/26/Neuron-submission.doc"
+        ],
         "pdf" : [
             "http://upload.wikimedia.org/wikipedia/commons/7/73/ASCII.pdf",
             "http://upload.wikimedia.org/wikipedia/commons/7/73/ASCII.pdf",
@@ -17,6 +20,9 @@
         ],
         "postscript" : [
             "http://arxiv.org/hypertex/link.ps"
+        ],
+        "vnd.ms-powerpoint" : [
+            "https://upload.wikimedia.org/wikipedia/wikimania2006/c/c4/WM_2006_-_Security.ppt"
         ],
         "vnd.oasis.opendocument.database" : [
             "http://ask.libreoffice.org/upfiles/14110339425827288.odb"
