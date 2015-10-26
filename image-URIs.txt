@@ -1,9 +1,0 @@
-# Raster image formats.
-http://upload.wikimedia.org/wikipedia/commons/6/6b/Japan_Railway_JRKyushu_Oita_Station_2.jpg
-http://upload.wikimedia.org/wikipedia/commons/d/d7/123_Numbers.gif
-http://upload.wikimedia.org/wikipedia/commons/f/f8/Cavity_wind_tunnel_setup.tiff
-http://upload.wikimedia.org/wikipedia/commons/2/23/050329-birthday1.png
-# Vector image formats.
-http://upload.wikimedia.org/wikipedia/commons/5/57/Color_icon_white.svg
-http://upload.wikimedia.org/wikipedia/commons/f/fd/Animated_pendulum.svg
-http://arxiv.org/html/cond-mat/9903007v4/fig3.eps
