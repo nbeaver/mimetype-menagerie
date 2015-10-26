@@ -96,7 +96,9 @@
     },
     "chemical" : {
         "x-cif" : [
-            "https://raw.githubusercontent.com/bruceravel/demeter/master/examples/AuCl.cif"
+            "https://raw.githubusercontent.com/bruceravel/demeter/master/examples/AuCl.cif",
+            "http://www.nanocrystallography.org/cif/1/10/10/1101035.cif",
+            "https://subversion.xor.aps.anl.gov/EXPGUI/gsas/all/training/alumina.cif"
         ],
         "x-xyz" : [
             "https://raw.githubusercontent.com/bruceravel/demeter/master/examples/recipes/Methyltin/methyltin.xyz",

@@ -1,0 +1,53 @@
+# This CIF was taken from ICSD data (exported using Alan Hewat's wonderful 
+# web software for ICSD). The unit cell & coordinates have been buggered 
+# from the Cox values to make the GSAS refinement do a little bit of work.
+
+data_Corundum-Al2O3-Cox
+
+_audit_creation_date                01:12:02
+
+_chemical_name_systematic          'Aluminium oxide '
+_chemical_formula_structural       'Al2O3'
+_chemical_formula_sum              ' AL2 O3    '
+
+_publ_section_title
+;
+Structural Refinement of Neutron and X-Ray Data by the Rietveld 
+ Method: Application to Al2 O3 and Bi V O4 
+;
+loop_
+_publ_author_name                  
+  'Cox D E'
+  'Moodenbaugh A R'
+  'Sleight A W'
+  'Chen H Y'
+                
+_journal_name_full                  'N.B.S.(U.S.),Spec.Publ.'
+_journal_volume                       567 
+_journal_year                        1980
+_journal_page_first                  189
+_journal_page_last                   201                 
+
+_cell_length_a                       4.766
+_cell_length_b                       4.765
+_cell_length_c                       12.95
+_cell_angle_alpha                    90.
+_cell_angle_beta                     90.
+_cell_angle_gamma                    120.
+_symmetry_space_group_name_H-M      'R -3 c '
+_symmetry_Int_Tables_number         '167'
+
+loop_
+_atom_site_label
+_atom_site_type_symbol
+_atom_site_symmetry_multiplicity
+_atom_site_Wyckoff_symbol
+_atom_site_fract_x
+_atom_site_fract_y
+_atom_site_fract_z
+_atom_site_B_iso_or_equiv 
+_atom_site_occupancy
+Al1 Al  12 c   0.00000 0.00000 0.34    0.02500 1.00000
+O1  O   18 e   0.33    0.00000 0.25000 0.02500 1.00000
+
+_refine_ls_R_factor_all              0.05
