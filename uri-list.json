@@ -1,0 +1,151 @@
+{
+    "application" : {
+        "epub+zip" : [
+            "https://www.gutenberg.org/ebooks/1.epub.noimages"
+        ],
+        "javascript" : [
+            "http://dir.w3.org/directory/js/directoryentry-edit.js",
+            "http://dir.w3.org/themes/2014/w3/js/popover.js",
+            "http://dir.w3.org/directory/libs/js/jquery.base64.min.js"
+        ],
+        "pdf" : [
+            "http://upload.wikimedia.org/wikipedia/commons/7/73/ASCII.pdf",
+            "http://upload.wikimedia.org/wikipedia/commons/7/73/ASCII.pdf",
+            "http://upload.wikimedia.org/wikipedia/commons/9/94/Factor_graph.pdf",
+            "http://upload.wikimedia.org/wikipedia/commons/f/fa/Equil.pdf",
+            "http://upload.wikimedia.org/wikipedia/commons/0/0c/Contactangle.pdf"
+        ],
+        "postscript" : [
+            "http://arxiv.org/hypertex/link.ps"
+        ],
+        "vnd.oasis.opendocument.database" : [
+            "http://ask.libreoffice.org/upfiles/14110339425827288.odb"
+        ],
+        "vnd.oasis.opendocument.formula" : [
+            "https://github.com/javigomez/lib_tbs/blob/master/demo/demo_oo_formula.odf?raw=true"
+        ],
+        "vnd.oasis.opendocument.graphics" : [
+            "http://ask.libreoffice.org/upfiles/13719228396115488.odg"
+        ],
+        "vnd.oasis.opendocument.presentation" : [
+            "http://ask.libreoffice.org/upfiles/13700816801195109.odp"
+        ],
+        "vnd.oasis.opendocument.spreadsheet" : [
+            "https://transparency.wikimedia.org/data/data_aug2014.ods"
+        ],
+        "vnd.oasis.opendocument.text" : [
+            "http://upload.wikimedia.org/wikipedia/foundation/d/d1/WMF_Admin_Job_Advertisement_Head_of_Business_Development.odt"
+        ],
+        "vnd.openxmlformats-officedocument.presentationml.presentation" : [
+            "https://home.archive.org/~mang/local/amazon%20referral%20revenue_files/amazon%20referral%20revenue.pptx",
+            "https://archive.org/download/2011-01-01WoordenLogos-rhema.pptx/2011-01-01WoordenLogos-rhema.pptx"
+        ],
+        "vnd.openxmlformats-officedocument.spreadsheetml.sheet" : [
+            "http://ia801603.us.archive.org/13/items/UrduBooks_201302/TotalAyatInQuran.xlsx"
+        ],
+        "vnd.openxmlformats-officedocument.wordprocessingml.document" : [
+            "http://arxiv.org/e-print/1009.4027v1.docx"
+        ],
+        "x-dvi" : [
+            "http://arxiv.org/hypertex/link.dvi"
+        ],
+        "xml" : [
+            "https://www.senate.gov/legislative/LIS/roll_call_lists/vote_menu_112_1.xml"
+        ],
+        "x-mobipocket-ebook" : [
+            "http://www.gutenberg.org/cache/epub/1/pg1.mobi"
+        ],
+        "x-portabase" : [
+        ],
+        "x-shellscript" : [
+            "https://raw.githubusercontent.com/sbc100/naclports/master/ports/devenv/which",
+            "http://download.savannah.gnu.org/releases/zdl/install_zdl.sh",
+            "http://download.savannah.gnu.org/releases/zdl/uninstall_zdl.sh"
+        ],
+        "zip" : [
+            "http://www.daisy.org/samples/202full-text-full-audio/gon-ruby-mp3.zip",
+            "http://www.daisy.org/samples/dtbook-xml/great-painters-dtbook-2005-3.zip",
+            "http://www.daisy.org/samples/202text-only/wipo-treaty-d202-text-only.zip"
+        ]
+    },
+    "audio" : {
+        "flac" : [
+            "http://upload.wikimedia.org/wikipedia/commons/b/b2/Bell-ring.flac"
+        ],
+        "midi" : [
+            "http://upload.wikimedia.org/wikipedia/commons/b/b0/%22Bebop-rebop%22_early_bop_phrase.mid"
+        ],
+        "mpeg" : [
+            "https://archive.org/download/scale1/s1.mp3"
+        ],
+        "x-vorbis+ogg" : [
+            "http://upload.wikimedia.org/wikipedia/commons/7/7f/Gliss.ogg"
+        ],
+        "x-wav" : [
+            "http://upload.wikimedia.org/wikipedia/commons/9/98/Beepalert.wav"
+        ]
+    },
+    "chemical" : {
+        "x-cif" : [
+            "https://raw.githubusercontent.com/bruceravel/demeter/master/examples/AuCl.cif"
+        ],
+        "x-xyz" : [
+            "https://raw.githubusercontent.com/bruceravel/demeter/master/examples/recipes/Methyltin/methyltin.xyz",
+            "https://raw.githubusercontent.com/bruceravel/XAS-Education/master/Talks/pimst/images/PbTiO3/list.xyz"
+        ]
+    },
+    "image" : {
+        "gif" : [
+            "http://upload.wikimedia.org/wikipedia/commons/d/d7/123_Numbers.gif"
+        ],
+        "jpeg" : [
+            "http://upload.wikimedia.org/wikipedia/commons/6/6b/Japan_Railway_JRKyushu_Oita_Station_2.jpg"
+        ],
+        "png" : [
+            "http://upload.wikimedia.org/wikipedia/commons/2/23/050329-birthday1.png"
+        ],
+        "svg+xml" : [
+            "http://upload.wikimedia.org/wikipedia/commons/5/57/Color_icon_white.svg",
+            "http://upload.wikimedia.org/wikipedia/commons/f/fd/Animated_pendulum.svg"
+        ],
+        "vnd.djvu" : [
+            "http://upload.wikimedia.org/wikipedia/commons/e/ea/Constitution_of_the_Republic_of_South_Africa_Amendment_Act_1995_from_Government_Gazette.djvu"
+        ],
+        "x-eps" : [
+            "http://arxiv.org/html/cond-mat/9903007v4/fig3.eps"
+        ]
+    },
+    "text" : {
+        "css" : [
+            "http://code.w3.org/unicorn/browser/WebContent/style/init.css"
+        ],
+        "html" : [
+            "http://www.ic.unicamp.br/~stolfi/EXPORT/www/ISO-8859-1-Encoding.html",
+            "http://jblevins.org/log/xml-tools"
+        ],
+        "plain" : [
+            "http://mako.cc/projects/utf8-tests/UTF-8-i_eat_glass.txt",
+            "http://www.gutenberg.org/cache/epub/1/pg1.txt"
+        ],
+        "x-csrc" : [
+        ],
+        "x-c++src" : [
+        ],
+        "x-java" : [
+        ],
+        "x-makefile" : [
+        ],
+        "x-python" : [
+        ],
+        "x-tex" : [
+        ]
+    },
+    "video" : {
+        "webm" : [
+            "http://upload.wikimedia.org/wikipedia/commons/6/6b/Zingon_-_YouTube.webm"
+        ],
+        "x-theora+ogg" : [
+            "http://upload.wikimedia.org/wikipedia/commons/b/bb/Triple_conj.ogg"
+        ]
+    }
+}
