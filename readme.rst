@@ -43,23 +43,12 @@ is quite reasonable on modern hard drives.
 Example usecase
 ---------------
 
-Suppose you want an example of a `VRML`_ file.
-With a mimetype menagerie, it's as simple as
-
-::
-
-    $ find . -iname VRML
-    ./media-types/model/vrml
-    $ ls media-types/model/vrml/
-    HelloWorld.wrl
-
-Finding an actual VRML file via web search
-is difficult by comparison.
+Suppose you want an example of a VRML file.
 
 `Wikipedia discusses VRML`_ and links to examples,
-but has no actual VRML files.
+but finding an actual VRML file via web search is non-trivial.
 
-How about a Google filetype search?
+A Google filetype search for ``.vrml`` files? Not helpful.
 
 https://google.com/search?q=filetype%3Avrml
 
@@ -67,13 +56,22 @@ Oops, that should be ``.wrl`` files.
 
 https://google.com/search?q=filetype%3Awrl
 
-But most of the results aren't relevant.
-And even if you find a good link,
+Most of the results still aren't relevant.
+
+Even if you find a good link,
 you either have to keep track of the file
 or bookmark the link,
 which could give a 404 the next time you open it.
 
 .. Wikipedia discusses VRML: https://en.wikipedia.org/wiki/VRML
+
+With a mimetype menagerie, it's as simple as this::
+
+    $ cd mimetype-menagerie/
+    $ find . -iname VRML
+    ./media-types/model/vrml
+    $ ls media-types/model/vrml/
+    HelloWorld.wrl
 
 -----
 Notes
