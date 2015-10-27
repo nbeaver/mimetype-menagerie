@@ -78,6 +78,9 @@
         ]
     },
     "audio" : {
+        "aiff" : [
+            "http://tdwhs.nwasco.k12.or.us/staff/lewing/resources/sound/Pinball%20Beeper.aiff"
+        ],
         "flac" : [
             "http://upload.wikimedia.org/wikipedia/commons/b/b2/Bell-ring.flac"
         ],
