@@ -6,7 +6,8 @@ The Mimetype Menagerie
 Goals
 -----
 
-At least one valid, representative file for every mimetype.
+At least one valid, representative file for every mimetype,
+because examples are useful and file extensions are unreliable.
 
 --------
 Criteria
@@ -16,8 +17,8 @@ In order of priority:
 
 #. Public domain or Creative Commons licensing.
 #. Correctly represents the mimetype.
+#. Stable URIs (permalinks are best).
 #. Relatively small file size (to save disk space and bandwidth).
-#. Stable URI (permalinks are best).
 
 -----------------
 Is that possible?
@@ -30,14 +31,6 @@ There are many more which are unofficial.
 It's a big job, but not impossible.
 
 .. about 1500 registered mimetypes: https://www.iana.org/assignments/media-types/media-types.xhtml
-
-----
-Why?
-----
-
-A reference library of examples of filetypes is useful,
-and the amount of required disk space
-is quite reasonable on modern hard drives.
 
 ---------------
 Example usecase
@@ -56,7 +49,7 @@ Oops, that should be ``.wrl`` files.
 
 https://google.com/search?q=filetype%3Awrl
 
-Most of the results still aren't relevant.
+But most of the results still aren't relevant.
 
 Even if you find a good link,
 you either have to keep track of the file
@@ -67,10 +60,10 @@ which could give a 404 the next time you open it.
 
 With a mimetype menagerie, it's as simple as this::
 
-    $ cd mimetype-menagerie/
+    $ cd media-types/
     $ find . -iname VRML
-    ./media-types/model/vrml
-    $ ls media-types/model/vrml/
+    ./model/vrml
+    $ ls model/vrml/
     HelloWorld.wrl
 
 -----
