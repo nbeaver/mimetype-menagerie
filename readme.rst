@@ -61,7 +61,7 @@ which could give a 404 the next time you open it.
 With a mimetype menagerie, it's as simple as this::
 
     $ cd media-types/
-    $ find . -iname VRML
+    $ find . -iname '*VRML*'
     ./model/vrml
     $ ls model/vrml/
     HelloWorld.wrl
