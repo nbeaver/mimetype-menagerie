@@ -1,5 +1,8 @@
-.PHONY : validate
-validate : check-mimetypes.out check-urls.out readme.html todo.html
+.PHONY : validate-local
+validate-local : check-mimetypes.out readme.html todo.html
+
+.PHONY : validate-remote
+validate-remote: check-urls.out
 
 check-mimetypes.out : check-mimetypes.py media-types/ Makefile
 	python3 check-mimetypes.py media-types/ > check-mimetypes.out
