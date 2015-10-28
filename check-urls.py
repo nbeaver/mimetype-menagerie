@@ -2,8 +2,9 @@
 
 import json
 import urllib.request
+import sys
 
-mimetype_dict = json.load(open('urls.json'))
+mimetype_dict = json.load(open(sys.argv[1]))
 
 for _, subtype_dict in mimetype_dict.items():
     for _, url_list in subtype_dict.items():

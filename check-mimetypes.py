@@ -2,8 +2,9 @@
 
 import mimetypes
 import os
+import sys
 
-rootdir = 'media-types'
+rootdir = sys.argv[1]
 for dirpath, dirnames, filenames in os.walk(rootdir):
     for filename in filenames:
         temp, expected_subtype = os.path.split(dirpath)
