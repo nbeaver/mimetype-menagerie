@@ -30,7 +30,7 @@ There are many more which are unofficial.
 
 It's a big job, but not impossible.
 
-.. about 1500 registered mimetypes: https://www.iana.org/assignments/media-types/media-types.xhtml
+.. _about 1500 registered mimetypes: https://www.iana.org/assignments/media-types/media-types.xhtml
 
 ---------------
 Example usecase
@@ -56,7 +56,7 @@ you either have to keep track of the file
 or bookmark the link,
 which could give a 404 the next time you open it.
 
-.. Wikipedia discusses VRML: https://en.wikipedia.org/wiki/VRML
+.. _Wikipedia discusses VRML: https://en.wikipedia.org/wiki/VRML
 
 With a mimetype menagerie, it's as simple as this::
 
