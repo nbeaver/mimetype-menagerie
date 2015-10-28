@@ -2,20 +2,22 @@
 Mimetypes to add
 ----------------
 
-- [ ] zip formats
+- archive formats
   - [x] `.zip`
   - [x] `.tar.gz`
   - [ ] `.iso`
-- [ ] trashinfo files (MS config files).
-- [ ] iCal files (.ics)
-- [ ] sources.list file (for debian)
-- [ ] fstab file
-- [ ] debian `.dsc` files
+  - [ ] [DAISY e-book files](https://bugs.freedesktop.org/show_bug.cgi?id=91873)
+- `text/plain` formats
+  - [ ] trashinfo files (MS config files).
+  - [ ] fstab file
+  - [ ] debian `.dsc` files
+- `text/calendar`
+  - [ ] iCal files (.ics)
+- [ ] `text/x-apt-sources-list` (sources.list file for debian)
   - [ ] https://www.debian.org/doc/debian-policy/ch-controlfields.html#s-controlsyntax
 - [ ] `.xm` files for trackers
 - [x] `.rtf` files
 - [ ] `.csv` files with semicolon delimiters and commas as decimal marks.
-- [ ] DAISY e-book files separately from zip files (https://bugs.freedesktop.org/show_bug.cgi?id=91873)
 
 ----------
 Validation
