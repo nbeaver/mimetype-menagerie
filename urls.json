@@ -71,10 +71,18 @@
             "http://download.savannah.gnu.org/releases/zdl/install_zdl.sh",
             "http://download.savannah.gnu.org/releases/zdl/uninstall_zdl.sh"
         ],
+        "x-tar" : [
+
+            "https://golang.org/src/archive/tar/testdata/gnu.tar",
+            "https://golang.org/src/archive/tar/testdata/star.tar"
+        ],
         "zip" : [
-            "http://www.daisy.org/samples/202full-text-full-audio/gon-ruby-mp3.zip",
-            "http://www.daisy.org/samples/dtbook-xml/great-painters-dtbook-2005-3.zip",
-            "http://www.daisy.org/samples/202text-only/wipo-treaty-d202-text-only.zip"
+            "https://golang.org/src/archive/zip/testdata/crc32-not-streamed.zip",
+            "https://golang.org/src/archive/zip/testdata/dd.zip",
+            "https://golang.org/src/archive/zip/testdata/unix.zip",
+            "https://golang.org/src/archive/zip/testdata/winxp.zip",
+            "https://golang.org/src/archive/zip/testdata/zip64.zip",
+            "https://sources.debian.net/src/fcrackzip/1.0-6/noradi.zip/"
         ]
     },
     "audio" : {
