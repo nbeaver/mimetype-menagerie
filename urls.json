@@ -55,6 +55,9 @@
         "vnd.openxmlformats-officedocument.wordprocessingml.document" : [
             "http://arxiv.org/e-print/1009.4027v1.docx"
         ],
+        "x-compressed-tar" : [
+            "https://sources.debian.net/src/bash/4.3-14/examples/complete/bashcc-1.0.1.tar.gz"
+        ],
         "x-dvi" : [
             "http://arxiv.org/hypertex/link.dvi"
         ],
