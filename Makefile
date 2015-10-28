@@ -8,7 +8,7 @@ check-mimetypes.py.out : check-mimetypes.py media-types/ Makefile
 	python3 check-mimetypes.py media-types/ > check-mimetypes.py.out
 
 check-mimetypes.sh.out : check-mimetypes.sh media-types/ Makefile
-	bash check-mimetypes.sh > check-mimetypes.sh.out
+	bash check-mimetypes.sh media-types/ > check-mimetypes.sh.out
 
 check-urls.py.out : check-urls.py urls.json Makefile
 	python3 check-urls.py urls.json > check-urls.py.out

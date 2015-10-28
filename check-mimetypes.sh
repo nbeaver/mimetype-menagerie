@@ -1,6 +1,12 @@
 #! /usr/bin/env bash
 
-for toplevel in media-types/*;
+if test $# -lt 1
+then
+    echo "Usage: bash check-mimetypes.sh media-types/"
+    exit 1
+fi
+
+for toplevel in "$*"/*;
 do
     for subtype in "$toplevel"/*;
     do
