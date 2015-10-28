@@ -3,8 +3,8 @@ Mimetypes to add
 ----------------
 
 - [ ] zip formats
-  - [ ] `.zip`
-  - [ ] `.tar.gz`
+  - [x] `.zip`
+  - [x] `.tar.gz`
   - [ ] `.iso`
 - [ ] trashinfo files (MS config files).
 - [ ] iCal files (.ics)
@@ -13,7 +13,7 @@ Mimetypes to add
 - [ ] debian `.dsc` files
   - [ ] https://www.debian.org/doc/debian-policy/ch-controlfields.html#s-controlsyntax
 - [ ] `.xm` files for trackers
-- [ ] `.rtf` files
+- [x] `.rtf` files
 - [ ] `.csv` files with semicolon delimiters and commas as decimal marks.
 - [ ] DAISY e-book files separately from zip files (https://bugs.freedesktop.org/show_bug.cgi?id=91873)
 
@@ -21,5 +21,6 @@ Mimetypes to add
 Validation
 ----------
 
-- [ ] Script to check that each file is in its proper folder.
+- [x] Check for broken URLs.
+- [x] Check that each file is in the folder corresponding to its mimetype.
 - [ ] List of SHA1 checksums to avoid re-downloading.
