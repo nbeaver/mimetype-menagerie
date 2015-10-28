@@ -3,7 +3,7 @@
 import json
 import urllib.request
 
-mimetype_dict = json.load(open('uri-list.json'))
+mimetype_dict = json.load(open('urls.json'))
 
 for _, subtype_dict in mimetype_dict.items():
     for _, url_list in subtype_dict.items():
