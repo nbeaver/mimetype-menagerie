@@ -18,3 +18,11 @@ readme.html : readme.rst Makefile
 
 todo.html : todo.md Makefile
 	markdown todo.md > todo.html
+
+.PHONY : clean
+clean:
+	rm --force check-mimetypes.py.out
+	rm --force check-mimetypes.sh.out
+	rm --force check-urls.py.out
+	rm --force todo.html
+	rm --force readme.html
