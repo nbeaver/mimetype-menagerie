@@ -1,5 +1,5 @@
 .PHONY : validate-local
-validate-local : check-mimetypes.py.out check-mimetypes.sh.out readme.html todo.html
+validate-local : check-mimetypes.py.out check-mimetypes.sh.out readme.html todo.html coverage_report.txt
 
 .PHONY : validate-remote
 validate-remote: check-urls.py.out
@@ -18,6 +18,9 @@ readme.html : readme.rst Makefile
 
 todo.html : todo.md Makefile
 	markdown todo.md > todo.html
+
+coverage_report.txt : generate_coverage_report.py Makefile
+	python3 generate_coverage_report.py > coverage_report.txt
 
 .PHONY : clean
 clean:
