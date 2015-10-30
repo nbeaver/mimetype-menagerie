@@ -9,6 +9,7 @@ Mimetypes to add
   - [ ] [DAISY e-book files](https://bugs.freedesktop.org/show_bug.cgi?id=91873)
   - [ ] `application/x-iso9660-image` ISO disk image (`.iso`)
     - Hard to find files of reasonable size.
+  - [ ] `application/x-dbf dBASE database files ([`.dbf`](https://en.wikipedia.org/wiki/.dbf))
 - `audio`
   - [ ] `audio/x-xm` (`.xm` files for trackers)
 - `text`
@@ -25,6 +26,9 @@ Mimetypes to add
     - [ ] `.csv` files with semicolon delimiters and commas as decimal marks.
   - [ ] `text/x-apt-sources-list` (sources.list file for Debian)
     - https://www.debian.org/doc/debian-policy/ch-controlfields.html#s-controlsyntax
+
+.. what about proprietary formats with no mimetype,
+.. e.g. Smacker video? https://en.wikipedia.org/wiki/Smacker_video
 
 ----------
 Validation
