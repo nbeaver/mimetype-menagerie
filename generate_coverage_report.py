@@ -22,14 +22,13 @@ for path in glob.glob("iana/*.csv"):
 mimetypes_in_repo = {}
 
 for dirpath, dirnames, filenames in os.walk('media-types/'):
-    for filename in filenames:
+    if filenames:
+        # If there are files, we know we are in a directory with examples,
+        # so we add the media type to the list.
         temp, subtype = os.path.split(dirpath)
         _, media_type = os.path.split(temp)
-        # TODO: make this more efficient
-        # by checking if there is at least one file in the directory
-        # instead of going through every single file.
         if media_type not in mimetypes_in_repo:
-            mimetypes_in_repo[media_type] = set()
+            mimetypes_in_repo[media_type] = set([subtype])
         else:
             mimetypes_in_repo[media_type].add(subtype)
 
