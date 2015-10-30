@@ -13,11 +13,11 @@ for path in glob.glob("iana/*.csv"):
         # but it works since the filenames match the media type.
         media_type = os.path.basename(path).rstrip('.csv')
         # e.g. mimetypes_iana['application'] = []
-        mimetypes_iana[media_type] = []
+        mimetypes_iana[media_type] = set()
         reader = csv.DictReader(csvfile)
         for row in reader:
             subtype = row['Name']
-            mimetypes_iana[media_type].append(subtype)
+            mimetypes_iana[media_type].add(subtype)
 
 print('Mimetypes registered:')
 for media_type, subtypes in mimetypes_iana.items():
@@ -25,14 +25,14 @@ for media_type, subtypes in mimetypes_iana.items():
 
 mimetypes_in_repo = {}
 
-for media_type in os.listdir('media-types/'):
-    mimetypes_in_repo[media_type] = []
-
 for dirpath, dirnames, filenames in os.walk('media-types/'):
     for filename in filenames:
         temp, subtype = os.path.split(dirpath)
         _, media_type = os.path.split(temp)
-        mimetypes_in_repo[media_type].append(subtype)
+        if media_type not in mimetypes_in_repo:
+            mimetypes_in_repo[media_type] = set()
+        else:
+            mimetypes_in_repo[media_type].add(subtype)
 
 print('Mimetypes in repo:')
 for media_type, subtypes in mimetypes_in_repo.items():
