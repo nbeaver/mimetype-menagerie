@@ -29,8 +29,10 @@ some of which are deprecated.
 There are many more which are unofficial.
 
 It's a big job, but not impossible.
+See the `coverage report`_ for details.
 
 .. _about 1500 registered mimetypes: https://www.iana.org/assignments/media-types/media-types.xhtml
+.. _coverage report: coverage_report.txt
 
 ---------------
 Example usecase
