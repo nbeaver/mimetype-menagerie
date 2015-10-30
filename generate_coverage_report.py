@@ -19,10 +19,6 @@ for path in glob.glob("iana/*.csv"):
             subtype = row['Name']
             mimetypes_iana[media_type].add(subtype)
 
-print('Mimetypes registered:')
-for media_type, subtypes in mimetypes_iana.items():
-    print(media_type, len(subtypes))
-
 mimetypes_in_repo = {}
 
 for dirpath, dirnames, filenames in os.walk('media-types/'):
@@ -34,6 +30,15 @@ for dirpath, dirnames, filenames in os.walk('media-types/'):
         else:
             mimetypes_in_repo[media_type].add(subtype)
 
-print('Mimetypes in repo:')
-for media_type, subtypes in mimetypes_in_repo.items():
-    print(media_type, len(subtypes))
+for media_type, subtypes in mimetypes_iana.items():
+    if media_type in mimetypes_in_repo:
+        subtypes_in_repo = mimetypes_in_repo[media_type]
+    else:
+        subtypes_in_repo = set()
+    mimetypes_common = set.intersection(subtypes, subtypes_in_repo)
+    mimetypes_unregistered = subtypes_in_repo - subtypes
+    mimetypes_to_do = subtypes - subtypes_in_repo
+    print(media_type)
+    print("    Mimetypes with examples:", len(mimetypes_common))
+    print("    Mimetypes that need examples:", len(mimetypes_to_do))
+    print("    Mimetypes unregistered:", len(mimetypes_unregistered))
