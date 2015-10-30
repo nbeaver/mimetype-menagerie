@@ -60,7 +60,14 @@ which could give a 404 the next time you open it.
 
 .. _Wikipedia discusses VRML: https://en.wikipedia.org/wiki/VRML
 
-With a mimetype menagerie, it's as simple as this::
+With a mimetype menagerie,
+it's as simple as a link to a directory:
+
+`<media-types/model/vrml/>`_
+
+And finding files from scratch
+is a simple search with a file manager
+or on the commandline like this::
 
     $ cd media-types/
     $ find . -iname '*VRML*'
