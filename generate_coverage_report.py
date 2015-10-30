@@ -51,12 +51,12 @@ for media_type, subtypes_iana in mimetypes_iana.items():
     total_to_do += len(subtypes_to_do)
     percent_to_do = 100*len(subtypes_to_do)/len(subtypes_iana)
     print(media_type)
-    print("    Mimetypes with examples: {} ({:.2f}%)".format(len(subtypes_in_common), percent_in_common) )
-    print("    Mimetypes that need examples: {} ({:.2f}%)".format(len(subtypes_to_do), percent_to_do) )
-    print("    Mimetypes examples not registered in IANA:", len(subtypes_unregistered) )
+    print("    IANA mimetypes in repo: {:>4} ({:>6.2f}%)".format(len(subtypes_in_common), percent_in_common) )
+    print("    IANA mimetypes missing: {:>4} ({:>6.2f}%)".format(len(subtypes_to_do), percent_to_do) )
+    print("    In repo, but not IANA: {:>5}".format(len(subtypes_unregistered)) )
 
 total_percent_in_common = 100*total_in_common/total_iana
 total_percent_to_do = 100*total_to_do/total_iana
-print("Total IANA mimetypes with examples: {} ({:.2f}%)".format(total_in_common, total_percent_in_common) )
-print("Total IANA mimetypes in need of examples: {} ({:.2f}%)".format(total_to_do, total_percent_to_do) )
-print("Total mimetypes not registered in IANA:", total_unregistered )
+print("Total IANA mimetypes in repo: {:>4} ({:>6.2f}%)".format(total_in_common, total_percent_in_common) )
+print("Total IANA mimetypes missing: {:>4} ({:>6.2f}%)".format(total_to_do, total_percent_to_do) )
+print("Total in repo, but not IANA: {:>5}".format(total_unregistered) )
