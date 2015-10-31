@@ -12,6 +12,8 @@ Mimetypes to add
   - [ ] `application/x-dbf dBASE database files ([`.dbf`](https://en.wikipedia.org/wiki/.dbf))
 - `audio`
   - [ ] `audio/x-xm` (`.xm` files for trackers)
+- `image`
+  - [x] `image/gif` An animated gif.
 - `text`
   - [`text/plain`](media-types/text/plain/)
     - [ ] INI files (MS config files).
