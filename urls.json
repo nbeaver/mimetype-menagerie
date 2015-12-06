@@ -120,6 +120,9 @@
         ]
     },
     "image" : {
+        "fits" : [
+            "http://fits.gsfc.nasa.gov/samples/WFPC2ASSNu5780205bx.fits"
+        ],
         "gif" : [
             "http://upload.wikimedia.org/wikipedia/commons/d/d7/123_Numbers.gif",
             "https://upload.wikimedia.org/wikipedia/commons/2/23/1x1.GIF",
