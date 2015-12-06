@@ -181,6 +181,15 @@
             "http://mako.cc/projects/utf8-tests/UTF-8-i_eat_glass.txt",
             "http://www.gutenberg.org/cache/epub/1/pg1.txt"
         ],
+        "tab-separated-values" : [
+            "https://www.cs.tut.fi/~jkorpela/tsv.tsv"
+        ],
+        "troff" : [
+            "http://git.savannah.gnu.org/cgit/groff.git/plain/src/roff/troff/troff.1.man"
+        ],
+        "vcard" : [
+            "https://ez-vcard.googlecode.com/svn-history/r780/trunk/src/test/resources/ezvcard/io/text/rfc6350-example.vcf"
+        ],
         "x-csrc" : [
         ],
         "x-c++src" : [
