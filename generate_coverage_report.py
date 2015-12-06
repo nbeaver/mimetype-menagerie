@@ -7,7 +7,7 @@ import os
 
 mimetypes_iana = collections.OrderedDict()
 
-for path in glob.glob("iana/*.csv"):
+for path in sorted(glob.glob("iana/*.csv")):
     with open(path) as csvfile:
         # This is a bit of a hack,
         # but it works since the filenames match the media type.
