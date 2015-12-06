@@ -10,7 +10,8 @@ Mimetypes to add
     - [ ] `application/x-iso9660-image` ISO disk image (`.iso`)
         - Hard to find files of reasonable size.
     - [ ] `application/x-dbf` dBASE database files ([`.dbf`](https://en.wikipedia.org/wiki/.dbf))
-    - [ ] `application/vnd.ms-cab-compressed` (`.cab`)
+    - [ ] `application/vnd.ms-cab-compressed` (`.cab`) Microsoft Windows archive format.
+    - [ ] `application/x-font-ttf` (`.ttf`) TrueType font files
 - `audio`
     - [ ] `audio/x-xm` (`.xm` files for trackers)
 - `image`
@@ -30,15 +31,12 @@ Mimetypes to add
     - [ ] `text/x-apt-sources-list` (sources.list file for Debian)
         - https://www.debian.org/doc/debian-policy/ch-controlfields.html#s-controlsyntax
 
-.. what about proprietary formats with no mimetype,
-.. e.g. Smacker video? https://en.wikipedia.org/wiki/Smacker_video
-.. font files, e.g. TrueType fonts
-
 ----------
 Validation
 ----------
 
 - [x] Check for broken URLs.
+- [ ] Change JSON so that each file can have multiple URLs.
 - [x] Check that each file is in the folder corresponding to its mimetype.
 - [ ] List of SHA1 checksums to avoid re-downloading.
     - [ ] Even better, make zsync control files.
