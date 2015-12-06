@@ -29,3 +29,4 @@ clean:
 	rm --force check-urls.py.out
 	rm --force todo.html
 	rm --force readme.html
+	rm --force coverage_report.txt
