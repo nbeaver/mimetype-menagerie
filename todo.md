@@ -13,6 +13,7 @@ Mimetypes to add
     - [ ] `application/vnd.ms-cab-compressed` Microsoft Windows Cabinet archive format ([`.cab`](https://en.wikipedia.org/wiki/Cabinet_%28file_format%29)) 
     - [ ] `application/x-font-ttf` TrueType font files ([`.ttf`](https://en.wikipedia.org/wiki/TrueType))
     - [ ] `application/sla` Stereolithography CAD file ([`.stl`](https://en.wikipedia.org/wiki/STL_%28file_format%29))
+    - [ ] `application/x-raw-disk-image` Raw disk image ([`.img`](https://en.wikipedia.org/wiki/IMG_%28file_format%29))
 - `audio`
     - [ ] `audio/x-xm` Extended module tracker audio format ([`.xm`](https://en.wikipedia.org/wiki/XM_%28file_format%29))
 - `image`
@@ -24,6 +25,7 @@ Mimetypes to add
         - [ ] debian `.dsc` files
     - `text/calendar`
         - [ ] iCal files ([`.ics`](https://en.wikipedia.org/wiki/ICalendar))
+            - <https://github.com/collective/icalendar/tree/master/src/icalendar/tests>
     - `text/csv`
         - [ ] [RFC 4180](https://tools.ietf.org/html/rfc4180) compliant files.
         - [ ] `.csv` files that are entirely numeric
