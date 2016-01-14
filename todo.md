@@ -4,8 +4,8 @@ Mimetypes to add
 
 - `application`
     - [x] [`application/rtf`](media-types/application/rtf/) Rich Text Format ([`.rtf`](https://en.wikipedia.org/wiki/Rich_Text_Format))
-    - [x] [`application/zip`](media-types/application/zip/) Zip file (`.zip`)
-    - [x] [`application/x-compressed-tar`](media-types/application/x-compressed-tar/) Gzipped tar file (`.tar.gz`)
+    - [x] [`application/zip`](media-types/application/zip/) Zip file ([`.zip`](https://en.wikipedia.org/wiki/Zip_%28file_format%29))
+    - [x] [`application/x-compressed-tar`](media-types/application/x-compressed-tar/) Gzipped tar file ([`.tar`](https://en.wikipedia.org/wiki/Tar_%28computing%29)[`.gz`](https://en.wikipedia.org/wiki/Gzip))
     - [ ] [DAISY e-book files](https://bugs.freedesktop.org/show_bug.cgi?id=91873)
     - [ ] `application/x-iso9660-image` ISO disk image ([`.iso`](https://en.wikipedia.org/wiki/ISO_image))
         - Hard to find files of reasonable size.
@@ -17,16 +17,17 @@ Mimetypes to add
 - `audio`
     - [ ] `audio/x-xm` Extended module tracker audio format ([`.xm`](https://en.wikipedia.org/wiki/XM_%28file_format%29))
 - `image`
-    - [x] `image/gif` An animated gif (current examples are static).
+    - [x] `image/gif` An animated gif (current examples are static) ([`.gif`](https://en.wikipedia.org/wiki/GIF))
 - `text`
     - [`text/plain`](media-types/text/plain/)
         - [ ] INI config files [`.ini`](https://en.wikipedia.org/wiki/INI_file)
-        - [ ] [fstab](https://en.wikipedia.org/wiki/Fstab) file
+        - [x] [fstab](https://en.wikipedia.org/wiki/Fstab) file
         - [ ] debian `.dsc` files
         - [ ] UTF8 [bidi text](https://en.wikipedia.org/wiki/Bi-directional_text) e.g. Arabic or Hebrew
     - `text/calendar`
-        - [ ] iCal files ([`.ics`](https://en.wikipedia.org/wiki/ICalendar))
-            - <https://github.com/collective/icalendar/tree/master/src/icalendar/tests>
+        - [x] iCal files ([`.ics`](https://en.wikipedia.org/wiki/ICalendar))
+            - [x] <https://github.com/libical/libical/tree/master/test-data>
+            - [x] <https://github.com/collective/icalendar/tree/master/src/icalendar/tests>
     - `text/csv`
         - [ ] [RFC 4180](https://tools.ietf.org/html/rfc4180) compliant files.
         - [ ] `.csv` files that are entirely numeric

@@ -172,6 +172,10 @@
         ]
     },
     "text" : {
+        "calendar" : [
+            "https://raw.githubusercontent.com/libical/libical/master/test-data/calendar.ics",
+            "https://raw.githubusercontent.com/collective/icalendar/master/src/icalendar/tests/encoding.ics"
+        ],
         "css" : [
             "http://code.w3.org/unicorn/browser/WebContent/style/init.css"
         ],
@@ -182,7 +186,8 @@
         ],
         "plain" : [
             "http://mako.cc/projects/utf8-tests/UTF-8-i_eat_glass.txt",
-            "http://www.gutenberg.org/cache/epub/1/pg1.txt"
+            "http://www.gutenberg.org/cache/epub/1/pg1.txt",
+            "https://gist.githubusercontent.com/morganp/1108187/raw/f50c16cfc85650d20736b70a2e28387c4bb8e64d/fstab"
         ],
         "tab-separated-values" : [
             "https://www.cs.tut.fi/~jkorpela/tsv.tsv"

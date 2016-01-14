@@ -1,0 +1,24 @@
+# /etc/fstab: static file system information.
+#
+# Use 'blkid -o value -s UUID' to print the universally unique identifier
+# for a device; this may be used with UUID= as a more robust way to name
+# devices that works even if disks are added and removed. See fstab(5).
+#
+# <file system> <mount point>   <type>  <options>       <dump>  <pass>
+proc            /proc           proc    nodev,noexec,nosuid 0       0
+# / was on /dev/sde1 during installation
+UUID=59a61ceb-fee3-460a-97c5-e9f115776daf /               ext4    errors=remount-ro 0       1
+# swap was on /dev/sde5 during installation
+UUID=80f9c384-9a5a-4563-921a-5c25628e1b2e none            swap    sw              0       0
+
+#/dev/sda1     /mnt/kryten/disk1 
+UUID=6f3bef9e-6c81-4545-bd9c-653ce8326e93     /mnt/kryten/disk1 ext4 rw,auto,user,exec,async,errors=remount-ro 0 1
+
+#/dev/sdc1     /mnt/kryten/disk2 
+UUID=9cbf62e9-44ec-480e-b695-94cc8e686c78     /mnt/kryten/disk2 ext4 rw,auto,user,exec,async,errors=remount-ro 0 1
+
+#/dev/sdd1     /mnt/kryten/disk3 
+UUID=876d25db-1ed7-4df1-b3f6-13004ade9107     /mnt/kryten/disk3 ext4 rw,auto,user,exec,async,errors=remount-ro 0 1
+
+#/dev/sdb1
+UUID=c41cba49-bd3a-41d7-961c-b4ad45d48ed1     /mnt/kryten/disk4 ext4 rw,auto,user,exec,async,errors=remount-ro 0 1
