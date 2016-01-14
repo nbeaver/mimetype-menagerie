@@ -17,11 +17,12 @@ Mimetypes to add
 - `audio`
     - [ ] `audio/x-xm` Extended module tracker audio format ([`.xm`](https://en.wikipedia.org/wiki/XM_%28file_format%29))
 - `image`
-    - [x] `image/gif` An animated gif (current examples are static) ([`.gif`](https://en.wikipedia.org/wiki/GIF))
+    - [x] [`image/gif`](media-types/image/gif/Green_bot_animated.gif) An animated gif ([`.gif`](https://en.wikipedia.org/wiki/GIF))
 - `text`
     - [`text/plain`](media-types/text/plain/)
         - [ ] INI config files [`.ini`](https://en.wikipedia.org/wiki/INI_file)
         - [x] [fstab](https://en.wikipedia.org/wiki/Fstab) file
+            - [media-types/text/plain/fstab](media-types/text/plain/fstab)
         - [ ] debian `.dsc` files
         - [ ] UTF8 [bidi text](https://en.wikipedia.org/wiki/Bi-directional_text) e.g. Arabic or Hebrew
     - `text/calendar`
