@@ -23,6 +23,7 @@ Mimetypes to add
         - [ ] INI config files [`.ini`](https://en.wikipedia.org/wiki/INI_file)
         - [ ] [fstab](https://en.wikipedia.org/wiki/Fstab) file
         - [ ] debian `.dsc` files
+        - [ ] UTF8 [bidi text](https://en.wikipedia.org/wiki/Bi-directional_text) e.g. Arabic or Hebrew
     - `text/calendar`
         - [ ] iCal files ([`.ics`](https://en.wikipedia.org/wiki/ICalendar))
             - <https://github.com/collective/icalendar/tree/master/src/icalendar/tests>
