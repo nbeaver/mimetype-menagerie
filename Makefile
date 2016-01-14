@@ -19,7 +19,7 @@ readme.html : readme.rst Makefile
 todo.html : todo.md Makefile
 	markdown todo.md > todo.html
 
-coverage_report.txt : generate_coverage_report.py Makefile
+coverage_report.txt : generate_coverage_report.py Makefile media-types/
 	python3 generate_coverage_report.py > coverage_report.txt
 
 .PHONY : clean
