@@ -4,10 +4,10 @@ validate-local : check-mimetypes.py.out check-mimetypes.sh.out readme.html todo.
 .PHONY : validate-remote
 validate-remote: check-urls.py.out
 
-check-mimetypes.py.out : check-mimetypes.py media-types/ Makefile
+check-mimetypes.py.out : check-mimetypes.py media-types/*/* Makefile
 	python3 check-mimetypes.py media-types/ > check-mimetypes.py.out
 
-check-mimetypes.sh.out : check-mimetypes.sh media-types/ Makefile
+check-mimetypes.sh.out : check-mimetypes.sh media-types/*/* Makefile
 	bash check-mimetypes.sh media-types/ > check-mimetypes.sh.out
 
 check-urls.py.out : check-urls.py urls.json Makefile
@@ -19,7 +19,7 @@ readme.html : readme.rst Makefile
 todo.html : todo.md Makefile
 	markdown todo.md > todo.html
 
-coverage_report.txt : generate_coverage_report.py Makefile media-types/
+coverage_report.txt : generate_coverage_report.py Makefile media-types/*/* iana/*.csv
 	python3 generate_coverage_report.py > coverage_report.txt
 
 .PHONY : clean
