@@ -83,3 +83,13 @@ Some mimetypes may not have any public domain examples,
 or may be patent-encumbered.
 These can be linked to,
 but will have to be omitted from the actual git repository.
+
+----------------
+Similar projects
+----------------
+
+The fuzzing programs American Fuzzy Lop (afl)
+has a number of testcases,
+such as archives and image formats:
+
+https://github.com/loverszhaokai/AFL/tree/master/testcases
