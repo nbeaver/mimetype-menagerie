@@ -68,6 +68,9 @@
         "x-dvi" : [
             "http://arxiv.org/hypertex/link.dvi"
         ],
+        "x-rar" : [
+            "https://github.com/arisada/afl-fuzz/blob/master/testcases/archives/common/rar/small_archive.rar"
+        ],
         "xml" : [
             "https://github.com/supertuxkart/stk-code/raw/33defa44b72df986e4fcb4a01fb37f244296709b/lib/irrlicht/tests/media/attributes.xml",
             "https://github.com/supertuxkart/stk-code/blob/33defa44b72df986e4fcb4a01fb37f244296709b/lib/irrlicht/tests/media/test.xml",
