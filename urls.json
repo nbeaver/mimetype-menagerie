@@ -188,7 +188,8 @@
             "https://raw.githubusercontent.com/collective/icalendar/master/src/icalendar/tests/encoding.ics"
         ],
         "css" : [
-            "http://code.w3.org/unicorn/browser/WebContent/style/init.css"
+            "http://dir.w3.org/directory/css/directory-listing.css",
+            "http://dir.w3.org/themes/2014/w3/styles/w3-styles-css.css"
         ],
         "html" : [
             "http://info.cern.ch/",
