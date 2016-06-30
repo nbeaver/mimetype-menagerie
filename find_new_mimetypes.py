@@ -7,8 +7,8 @@ import mimetypes
 
 
 try:
-    rootdir = sys.argv[1]
-    mimepath = sys.argv[2]
+    mimepath = sys.argv[1]
+    rootdir = sys.argv[2]
 except IndexError:
     sys.stderr.write("Usage: {} /path/of/interest known-mimetypes.txt\n".format(sys.argv[0]))
     sys.exit(1)
@@ -18,13 +18,17 @@ with open(mimepath) as mimefile:
     for line in mimefile.readlines():
         known_mimetypes.add(line.strip())
 
-unknown_mimetypes = set()
+new_mimetypes = {}
 for dirpath, dirnames, filenames in os.walk(rootdir):
     for filename in filenames:
+        filepath = os.path.join(dirpath, filename)
         mimetype, encoding = mimetypes.guess_type(filename)
         if mimetype and mimetype not in known_mimetypes:
-            unknown_mimetypes.add(mimetype)
+            if mimetype not in new_mimetypes:
+                new_mimetypes[mimetype] = []
+            new_mimetypes[mimetype].append(filepath)
 
-for mimetype in sorted(unknown_mimetypes):
-    print(mimetype)
+for mimetype in sorted(new_mimetypes.keys()):
+    for path in new_mimetypes[mimetype]:
+        print(mimetype, path)
 
