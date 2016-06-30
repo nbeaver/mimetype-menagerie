@@ -96,7 +96,7 @@
             "https://golang.org/src/archive/zip/testdata/unix.zip",
             "https://golang.org/src/archive/zip/testdata/winxp.zip",
             "https://golang.org/src/archive/zip/testdata/zip64.zip",
-            "https://github.com/hyc/fcrackzip/blob/master/noradi.zip"
+            "https://github.com/hyc/fcrackzip/raw/master/noradi.zip"
         ]
     },
     "audio" : {
