@@ -159,7 +159,8 @@
         ],
         "tiff" : [
             "https://commons.wikimedia.org/wiki/File:Cavity_wind_tunnel_setup.tiff",
-            "https://upload.wikimedia.org/wikipedia/commons/1/15/The_others.tiff"
+            "https://upload.wikimedia.org/wikipedia/commons/1/15/The_others.tiff",
+            "https://github.com/arisada/afl-fuzz/raw/master/testcases/images/tiff/not_kitty.tiff"
         ],
         "vnd.djvu" : [
             "https://commons.wikimedia.org/wiki/File:Congruence_properties_of_partitions.djvu"
