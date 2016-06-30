@@ -141,6 +141,9 @@
             "https://upload.wikimedia.org/wikipedia/commons/6/61/24_3_2.gif",
             "https://commons.wikimedia.org/wiki/File:Green_bot_animated.gif"
         ],
+        "jp2" : [
+            "https://github.com/arisada/afl-fuzz/raw/master/testcases/images/jp2/not_kitty.jp2"
+        ],
         "jpeg" : [
             "https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/Kubuntu_15_04.jpeg/300px-Kubuntu_15_04.jpeg",
             "https://upload.wikimedia.org/wikipedia/en/4/48/Blank.JPG"
