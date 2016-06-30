@@ -28,6 +28,9 @@
             "http://userpages.umbc.edu/~squire/download/cube2.stl",
             "https://raw.githubusercontent.com/pib/pycam/master/samples/Sphere0.stl"
         ],
+        "vnd.ms-cab-compressed" : [
+            "https://github.com/arisada/afl-fuzz/blob/master/testcases/archives/common/cab/small_archive.cab"
+        ],
         "vnd.ms-powerpoint" : [
             "https://upload.wikimedia.org/wikipedia/wikimania2006/c/c4/WM_2006_-_Security.ppt"
         ],
