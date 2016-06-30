@@ -67,7 +67,9 @@
             "http://arxiv.org/hypertex/link.dvi"
         ],
         "xml" : [
-            "https://www.senate.gov/legislative/LIS/roll_call_lists/vote_menu_112_1.xml"
+            "https://github.com/supertuxkart/stk-code/raw/33defa44b72df986e4fcb4a01fb37f244296709b/lib/irrlicht/tests/media/attributes.xml",
+            "https://github.com/supertuxkart/stk-code/blob/33defa44b72df986e4fcb4a01fb37f244296709b/lib/irrlicht/tests/media/test.xml",
+            "https://github.com/supertuxkart/stk-code/blob/33defa44b72df986e4fcb4a01fb37f244296709b/lib/irrlicht/tests/media/cdata.xml"
         ],
         "x-mobipocket-ebook" : [
             "http://www.gutenberg.org/cache/epub/1/pg1.mobi"
