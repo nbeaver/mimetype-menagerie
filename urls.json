@@ -213,6 +213,8 @@
         "x-makefile" : [
         ],
         "x-python" : [
+            "https://svn.python.org/projects/python/trunk/Lib/antigravity.py",
+            "https://svn.python.org/projects/python/trunk/Lib/this.py",
         ],
         "x-tex" : [
         ]
