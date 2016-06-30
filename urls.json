@@ -29,7 +29,7 @@
             "https://raw.githubusercontent.com/pib/pycam/master/samples/Sphere0.stl"
         ],
         "vnd.ms-cab-compressed" : [
-            "https://github.com/arisada/afl-fuzz/blob/master/testcases/archives/common/cab/small_archive.cab"
+            "https://github.com/arisada/afl-fuzz/raw/master/testcases/archives/common/cab/small_archive.cab"
         ],
         "vnd.ms-powerpoint" : [
             "https://upload.wikimedia.org/wikipedia/wikimania2006/c/c4/WM_2006_-_Security.ppt"
@@ -38,7 +38,7 @@
             "http://ask.libreoffice.org/upfiles/14110339425827288.odb"
         ],
         "vnd.oasis.opendocument.formula" : [
-            "https://github.com/javigomez/lib_tbs/blob/master/demo/demo_oo_formula.odf?raw=true"
+            "https://github.com/javigomez/lib_tbs/raw/master/demo/demo_oo_formula.odf"
         ],
         "vnd.oasis.opendocument.graphics" : [
             "http://ask.libreoffice.org/upfiles/13719228396115488.odg"
@@ -69,7 +69,7 @@
             "http://arxiv.org/hypertex/link.dvi"
         ],
         "x-rar" : [
-            "https://github.com/arisada/afl-fuzz/blob/master/testcases/archives/common/rar/small_archive.rar"
+            "https://github.com/arisada/afl-fuzz/raw/master/testcases/archives/common/rar/small_archive.rar"
         ],
         "xml" : [
             "https://github.com/supertuxkart/stk-code/raw/33defa44b72df986e4fcb4a01fb37f244296709b/lib/irrlicht/tests/media/attributes.xml",
