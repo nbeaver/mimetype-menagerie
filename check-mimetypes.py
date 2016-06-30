@@ -4,24 +4,25 @@ import mimetypes
 import os
 import sys
 import subprocess
+import shutil
 
 def walkdir(rootdir):
     for dirpath, dirnames, filenames in os.walk(rootdir):
         for filename in filenames:
-            full_path = os.path.join(dirpath, filename)
+            filepath = os.path.join(dirpath, filename)
             temp, expected_subtype = os.path.split(dirpath)
             _, expected_toplevel = os.path.split(temp)
             expected_mimetype = "/".join([expected_toplevel, expected_subtype])
             guesses = {}
             python_mimetype, encoding = mimetypes.guess_type(filename)
             guesses['python.mimetypes.guess_type()'] = python_mimetype
-            if os.path.isfile('mimetype'):
-                perl_mimetype = subprocess.call(['mimetype', '--brief', filename])
+            if shutil.which('mimetype'):
+                perl_mimetype = subprocess.check_output(['mimetype', '--brief', filepath]).decode().strip()
                 guesses['mimetype(1)'] = perl_mimetype
-            if os.path.isfile('file'):
-                file_mimetype = subprocess.call(['file', '--brief', '--mime-type', filename])
+            if shutil.which('file'):
+                file_mimetype = subprocess.check_output(['file', '--brief', '--mime-type', filepath]).decode().strip()
                 guesses['file(1)'] = file_mimetype
-            check_match(expected_mimetype, guesses, full_path)
+            check_match(expected_mimetype, guesses, filepath)
 
 
 def check_match(expected, guesses, path):
