@@ -20,7 +20,10 @@ for _, subtype_dict in mimetype_dict.items():
             except urllib.error.HTTPError as err:
                 # TODO: url may redirect to err.url; display this too?
                 print("URL failed with status {}: {}".format(err.code, url))
-                continue
+                raise
+            except urllib.error.URLError as err:
+                print("URL failed : {}".format(url))
+                raise
             except ConnectionResetError as err:
                 print("Connection failed on: {}".format(err.code, url))
-                continue
+                raise
