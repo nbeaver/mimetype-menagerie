@@ -207,7 +207,8 @@
             "http://git.savannah.gnu.org/cgit/groff.git/plain/src/roff/troff/troff.1.man"
         ],
         "vcard" : [
-            "https://ez-vcard.googlecode.com/svn-history/r780/trunk/src/test/resources/ezvcard/io/text/rfc6350-example.vcf"
+            "https://github.com/mangstadt/ez-vcard/raw/master/src/test/resources/ezvcard/io/text/rfc6350-example.vcf",
+            "https://github.com/mangstadt/ez-vcard/raw/master/src/test/resources/ezvcard/io/text/rfc2426-example.vcf"
         ],
         "x-csrc" : [
         ],
