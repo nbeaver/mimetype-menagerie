@@ -2,13 +2,11 @@
 validate-local : check-mimetypes.py.out readme.html todo.html coverage_report.txt
 
 .PHONY : validate-remote
-validate-remote: check-urls.py.out
+validate-remote: check-urls.py urls.json
+	python3 check-urls.py urls.json
 
 check-mimetypes.py.out : check-mimetypes.py media-types/*/* Makefile
 	python3 check-mimetypes.py media-types/ > check-mimetypes.py.out
-
-check-urls.py.out : check-urls.py urls.json Makefile
-	python3 check-urls.py urls.json > check-urls.py.out
 
 readme.html : readme.rst Makefile
 	rst2html readme.rst readme.html
