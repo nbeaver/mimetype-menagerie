@@ -199,6 +199,9 @@
             "http://dir.w3.org/directory/css/directory-listing.css",
             "http://dir.w3.org/themes/2014/w3/styles/w3-styles-css.css"
         ],
+        "csv" : [
+            "https://github.com/openmundi/world.csv/raw/master/countries(204)_olympics.csv"
+        ],
         "html" : [
             "http://info.cern.ch/",
             "http://www.ic.unicamp.br/~stolfi/EXPORT/www/ISO-8859-1-Encoding.html",
