@@ -219,6 +219,9 @@
             "https://github.com/mangstadt/ez-vcard/raw/master/src/test/resources/ezvcard/io/text/rfc6350-example.vcf",
             "https://github.com/mangstadt/ez-vcard/raw/master/src/test/resources/ezvcard/io/text/rfc2426-example.vcf"
         ],
+        "x-bibtex" : [
+            "https://sources.debian.net/data/main/t/texlive-base/2016.20160623-1/texmf-dist/bibtex/bib/base/xampl.bib"
+        ],
         "x-csrc" : [
         ],
         "x-c++src" : [
