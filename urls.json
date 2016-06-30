@@ -165,6 +165,9 @@
         "vnd.djvu" : [
             "https://commons.wikimedia.org/wiki/File:Congruence_properties_of_partitions.djvu"
         ],
+        "vnd.microsoft.icon" : [
+            "https://github.com/arisada/afl-fuzz/raw/master/testcases/images/ico/not_kitty.ico"
+        ],
         "x-eps" : [
             "http://arxiv.org/html/cond-mat/9903007v4/fig3.eps"
         ],
