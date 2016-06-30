@@ -1,4 +1,5 @@
 application/javascript
+application/json
 application/msword
 application/pdf
 application/postscript
@@ -49,6 +50,7 @@ text/html
 text/plain
 text/tab-separated-values
 text/vcard
+text/x-bibtex
 text/x-c++src
 text/x-csrc
 text/x-java
