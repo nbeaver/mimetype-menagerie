@@ -6,8 +6,13 @@ The Mimetype Menagerie
 Goals
 -----
 
-At least one valid, representative file for every mimetype,
-because examples are useful and file extensions are unreliable.
+A single repository with an example file for every mimetype.
+
+----
+Why?
+----
+
+Because examples are useful and file extensions are unreliable.
 
 --------
 Criteria
