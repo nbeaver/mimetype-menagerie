@@ -23,13 +23,13 @@ multipart
     IANA mimetypes missing:   15 (100.00%)
     In repo, but not IANA:     0
 text
-    IANA mimetypes in repo:    7 ( 10.00%)
-    IANA mimetypes missing:   63 ( 90.00%)
+    IANA mimetypes in repo:    8 ( 11.43%)
+    IANA mimetypes missing:   62 ( 88.57%)
     In repo, but not IANA:     7
 video
-    IANA mimetypes in repo:    1 (  1.30%)
-    IANA mimetypes missing:   76 ( 98.70%)
+    IANA mimetypes in repo:    2 (  2.60%)
+    IANA mimetypes missing:   75 ( 97.40%)
     In repo, but not IANA:     1
-Total IANA mimetypes in repo:   41 (  2.66%)
-Total IANA mimetypes missing: 1501 ( 97.34%)
+Total IANA mimetypes in repo:   43 (  2.79%)
+Total IANA mimetypes missing: 1499 ( 97.21%)
 Total in repo, but not IANA:    27

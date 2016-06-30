@@ -10,7 +10,7 @@ Mimetypes to add
     - [ ] `application/x-iso9660-image` ISO disk image ([`.iso`](https://en.wikipedia.org/wiki/ISO_image))
         - Hard to find files of reasonable size.
     - [ ] `application/x-dbf` dBASE database files ([`.dbf`](https://en.wikipedia.org/wiki/.dbf))
-    - [ ] `application/vnd.ms-cab-compressed` Microsoft Windows Cabinet archive format ([`.cab`](https://en.wikipedia.org/wiki/Cabinet_%28file_format%29)) 
+    - [x] `application/vnd.ms-cab-compressed` Microsoft Windows Cabinet archive format ([`.cab`](https://en.wikipedia.org/wiki/Cabinet_%28file_format%29)) 
     - [ ] `application/x-font-ttf` TrueType font files ([`.ttf`](https://en.wikipedia.org/wiki/TrueType))
     - [x] [`application/sla`](media-types/application/sla) Stereolithography CAD file ([`.stl`](https://en.wikipedia.org/wiki/STL_%28file_format%29))
     - [ ] `application/x-raw-disk-image` Raw disk image ([`.img`](https://en.wikipedia.org/wiki/IMG_%28file_format%29))
@@ -30,7 +30,7 @@ Mimetypes to add
             - [x] <https://github.com/libical/libical/tree/master/test-data>
             - [x] <https://github.com/collective/icalendar/tree/master/src/icalendar/tests>
     - `text/csv`
-        - [ ] [RFC 4180](https://tools.ietf.org/html/rfc4180) compliant files.
+        - [x] [RFC 4180](https://tools.ietf.org/html/rfc4180) compliant files.
         - [ ] `.csv` files that are entirely numeric
         - [ ] `.csv` files with quoting
         - [ ] `.csv` files with semicolon delimiters and commas as decimal marks.
@@ -46,3 +46,6 @@ Validation
 - [x] Check that each file is in the folder corresponding to its mimetype.
 - [ ] List of SHA1 checksums to avoid re-downloading.
     - [ ] Even better, make zsync control files.
+- [ ] Check that the list of URLs and actual files correspond.
+    - [ ] List of files without corresponding URLs.
+    - [ ] List of URLs without corresponding files.

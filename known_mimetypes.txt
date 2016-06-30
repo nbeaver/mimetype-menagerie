@@ -46,6 +46,7 @@ model/x3d+binary
 model/x3d+xml
 text/calendar
 text/css
+text/csv
 text/html
 text/plain
 text/tab-separated-values
@@ -57,5 +58,6 @@ text/x-java
 text/x-python
 text/x-sh
 text/x-tex
+video/mp4
 video/quicktime
 x-world/x-vrml
