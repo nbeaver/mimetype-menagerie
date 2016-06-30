@@ -238,6 +238,9 @@
         ]
     },
     "video" : {
+        "mp4" : [
+            "https://github.com/arisada/afl-fuzz/raw/master/testcases/multimedia/h264/small_movie.mp4"
+        ],
         "quicktime" : [
             "http://tdwhs.nwasco.k12.or.us/staff/lewing/resources/movies/SplatterPaint.mov"
         ],
