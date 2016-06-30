@@ -2,7 +2,8 @@
 
 if test $# -lt 1
 then
-    echo "Usage: bash check-mimetypes.sh media-types/"
+    scriptname="$(basename "$0")"
+    echo "Usage: bash $scriptname media-types/"
     exit 1
 fi
 
