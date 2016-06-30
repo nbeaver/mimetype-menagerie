@@ -30,4 +30,8 @@ def check_match(expected, guesses, path):
         if guess and guess != expected:
             print("Warning: expected {} but got {} for {} at file {}".format(repr(expected), repr(guess), repr(guesser), repr(path)))
 
-walkdir(sys.argv[1])
+if len(sys.argv) > 1:
+    walkdir(sys.argv[1])
+else:
+    sys.stderr.write("Usage: {} media-types/\n".format(sys.argv[0]))
+    sys.exit(1)
