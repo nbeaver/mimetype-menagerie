@@ -1,20 +1,23 @@
 .PHONY : validate-local
-validate-local : check-mimetypes.py.out readme.html todo.html coverage_report.txt
+validate-local : check-mimetypes.py.out readme.html todo.html known_mimetypes.txt coverage_report.txt
 
 .PHONY : validate-remote
 validate-remote: check-urls.py urls.json
 	python3 check-urls.py urls.json
 
-check-mimetypes.py.out : check-mimetypes.py media-types/*/* Makefile
+check-mimetypes.py.out : check-mimetypes.py media-types/*/*
 	python3 check-mimetypes.py media-types/ > check-mimetypes.py.out
 
-readme.html : readme.rst Makefile
+readme.html : readme.rst
 	rst2html readme.rst readme.html
 
-todo.html : todo.md Makefile
+todo.html : todo.md
 	markdown todo.md > todo.html
 
-coverage_report.txt : generate_coverage_report.py Makefile media-types/*/* iana/*.csv
+known_mimetypes.txt : media-types/*/* known_mimetypes.py
+	python3 known_mimetypes.py media-types/ > known_mimetypes.txt
+
+coverage_report.txt : generate_coverage_report.py media-types/*/* iana/*.csv
 	python3 generate_coverage_report.py > coverage_report.txt
 
 .PHONY : clean
