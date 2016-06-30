@@ -229,12 +229,14 @@
             "https://sources.debian.net/data/main/t/texlive-base/2016.20160623-1/texmf-dist/bibtex/bib/base/xampl.bib"
         ],
         "x-csrc" : [
+            "https://git.kernel.org/cgit/linux/kernel/git/stable/linux-stable.git/plain/lib/gcd.c?id=refs/tags/v4.6.3"
         ],
         "x-c++src" : [
         ],
         "x-java" : [
         ],
         "x-makefile" : [
+            "https://git.kernel.org/cgit/linux/kernel/git/stable/linux-stable.git/plain/kernel/Makefile?id=refs/tags/v4.6.3"
         ],
         "x-python" : [
             "https://svn.python.org/projects/python/trunk/Lib/antigravity.py",
