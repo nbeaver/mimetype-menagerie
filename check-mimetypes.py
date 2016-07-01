@@ -7,28 +7,37 @@ import subprocess
 import shutil
 
 def walkdir(rootdir):
+    filepaths = []
     for dirpath, dirnames, filenames in os.walk(rootdir):
         for filename in filenames:
             filepath = os.path.join(dirpath, filename)
-            temp, expected_subtype = os.path.split(dirpath)
-            _, expected_toplevel = os.path.split(temp)
-            expected_mimetype = "/".join([expected_toplevel, expected_subtype])
-            guesses = {}
+            filepaths.append(filepath)
             python_mimetype, encoding = mimetypes.guess_type(filename)
-            guesses['python.mimetypes.guess_type()'] = python_mimetype
-            if shutil.which('mimetype'):
-                perl_mimetype = subprocess.check_output(['mimetype', '--brief', filepath]).decode().strip()
-                guesses['mimetype(1)'] = perl_mimetype
-            if shutil.which('file'):
-                file_mimetype = subprocess.check_output(['file', '--brief', '--mime-type', filepath]).decode().strip()
-                guesses['file(1)'] = file_mimetype
-            check_match(expected_mimetype, guesses, filepath)
+            if python_mimetype != None:
+                check_match(expected_mimetype(filepath), python_mimetype, 'python.mimetypes.guess_type()', filepath)
 
+    def run_subprocess(cmd, args, name, delimiter):
+        if shutil.which(cmd):
+            output = subprocess.check_output([cmd] + args + filepaths).decode()
+            lines = output.split('\n')
+            for line in lines:
+                if delimiter in line:
+                    filepath, mimetype = line.split(sep=delimiter, maxsplit=1)
+                    mimetype = mimetype.strip()
+                    check_match(expected_mimetype(filepath), mimetype, name, filepath)
 
-def check_match(expected, guesses, path):
-    for guesser, guess in guesses.items():
-        if guess and guess != expected:
-            print("Warning: expected {} but got {} from {} on file {}".format(repr(expected), repr(guess), repr(guesser), repr(path)))
+    run_subprocess('mimetype', ['--noalign'], 'mimetype(1)', ':')
+    run_subprocess('file', ['--mime-type'], 'file(1)', ':')
+
+def expected_mimetype(filepath):
+    parent, _ = os.path.split(filepath)
+    grandparent, subtype = os.path.split(parent)
+    _, toplevel = os.path.split(grandparent)
+    return "/".join([toplevel, subtype])
+
+def check_match(expected, guess, guesser, path):
+    if guess != expected:
+        print("Warning: expected {} but got {} from {} on file {}".format(repr(expected), repr(guess), repr(guesser), repr(path)))
 
 if len(sys.argv) > 1:
     walkdir(sys.argv[1])
