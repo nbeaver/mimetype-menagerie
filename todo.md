@@ -31,6 +31,7 @@ Mimetypes to add
             - [x] <https://github.com/collective/icalendar/tree/master/src/icalendar/tests>
     - `text/csv`
         - [x] [RFC 4180](https://tools.ietf.org/html/rfc4180) compliant files.
+        - [ ] Examples from `csvkit`](https://github.com/wireservice/csvkit/tree/master/examples)
         - [ ] `.csv` files that are entirely numeric
         - [ ] `.csv` files with quoting
         - [ ] `.csv` files with semicolon delimiters and commas as decimal marks.
