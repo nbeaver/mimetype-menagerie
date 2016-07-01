@@ -10,7 +10,7 @@ try:
     mimepath = sys.argv[1]
     rootdir = sys.argv[2]
 except IndexError:
-    sys.stderr.write("Usage: {} /path/of/interest known-mimetypes.txt\n".format(sys.argv[0]))
+    sys.stderr.write("Usage: {} known-mimetypes.txt /path/of/interest\n".format(sys.argv[0]))
     sys.exit(1)
 
 known_mimetypes = set()
