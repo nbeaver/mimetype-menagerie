@@ -36,6 +36,9 @@ Mimetypes to add
         - [ ] `.csv` files with semicolon delimiters and commas as decimal marks.
     - [ ] `text/x-apt-sources-list` (sources.list file for Debian)
         - https://www.debian.org/doc/debian-policy/ch-controlfields.html#s-controlsyntax
+    - `text/x-chdr`
+    - `text/x-diff`
+    - `text/x-perl`
 
 ----------
 Validation

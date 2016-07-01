@@ -37,6 +37,7 @@ image/png
 image/svg+xml
 image/tiff
 image/vnd.djvu
+image/vnd.microsoft.icon
 image/x-ms-bmp
 image/x-portable-bitmap
 image/x-portable-graymap
