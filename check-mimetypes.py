@@ -28,7 +28,7 @@ def walkdir(rootdir):
 def check_match(expected, guesses, path):
     for guesser, guess in guesses.items():
         if guess and guess != expected:
-            print("Warning: expected {} but got {} for {} at file {}".format(repr(expected), repr(guess), repr(guesser), repr(path)))
+            print("Warning: expected {} but got {} from {} on file {}".format(repr(expected), repr(guess), repr(guesser), repr(path)))
 
 if len(sys.argv) > 1:
     walkdir(sys.argv[1])
