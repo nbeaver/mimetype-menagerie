@@ -232,8 +232,11 @@
             "https://git.kernel.org/cgit/linux/kernel/git/stable/linux-stable.git/plain/lib/gcd.c?id=refs/tags/v4.6.3"
         ],
         "x-c++src" : [
+            "https://mattmccutchen.net/bigint/bigint.git/blob_plain/HEAD:/sample.cc",
+            "https://github.com/dryproject/libcpr/raw/master/src/cpr/feature.cc"
         ],
         "x-java" : [
+            "https://github.com/vladdu/jsched/raw/master/src/jsched/MailBox.java"
         ],
         "x-makefile" : [
             "https://git.kernel.org/cgit/linux/kernel/git/stable/linux-stable.git/plain/kernel/Makefile?id=refs/tags/v4.6.3"
