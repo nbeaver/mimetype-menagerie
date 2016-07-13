@@ -93,7 +93,7 @@ but will have to be omitted from the actual git repository.
 Similar projects
 ----------------
 
-The fuzzing programs American Fuzzy Lop (afl)
+The fuzzing program American Fuzzy Lop (afl)
 has a number of testcases,
 such as archives and image formats:
 
