@@ -182,6 +182,9 @@
         ]
     },
     "model" : {
+        "iges" : [
+		"https://github.com/robEllenberg/MATLAB/raw/80fa514e39e134864d202e2134099b7d05402619/toolbox/igesToolBox/example2.igs"
+	],
         "vrml" : [
             "http://www.web3d.org/x3d-resources/content/examples/HelloWorld.wrl",
             "https://sources.debian.net/src/kicad/4.0.2%2Bdfsg1-4/library/kicad-library-master/modules/packages3d/Connect.3dshapes/PINTST.wrl/"

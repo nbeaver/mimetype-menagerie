@@ -43,6 +43,7 @@ image/x-portable-bitmap
 image/x-portable-graymap
 image/x-portable-pixmap
 message/rfc822
+model/iges
 model/x3d+binary
 model/x3d+xml
 text/calendar
