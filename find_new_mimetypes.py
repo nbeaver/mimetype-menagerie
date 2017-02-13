@@ -28,3 +28,4 @@ if __name__ == '__main__':
             if mimetype is not None and mimetype not in known_mimetypes and mimetype not in new_mimetypes:
                 new_mimetypes.add(mimetype)
                 sys.stdout.write('{}\t{}\n'.format(mimetype, filepath))
+                sys.stdout.flush()
