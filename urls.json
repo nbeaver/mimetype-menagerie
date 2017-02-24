@@ -1,96 +1,94 @@
 {
-    "application" : {
-        "epub+zip" : [
+    "application": {
+        "epub+zip": [
             "https://www.gutenberg.org/ebooks/1.epub.noimages"
         ],
-        "javascript" : [
+        "javascript": [
             "http://dir.w3.org/directory/js/directoryentry-edit.js",
-            "http://dir.w3.org/themes/2014/w3/js/popover.js",
-            "http://dir.w3.org/directory/libs/js/jquery.base64.min.js"
+            "http://dir.w3.org/directory/libs/js/jquery.base64.min.js",
+            "http://dir.w3.org/themes/2014/w3/js/popover.js"
         ],
-        "msword" : [
+        "msword": [
             "https://upload.wikimedia.org/wikipedia/foundation/a/a2/OracleForm.doc"
         ],
-        "pdf" : [
+        "pdf": [
             "http://upload.wikimedia.org/wikipedia/commons/7/73/ASCII.pdf",
             "http://upload.wikimedia.org/wikipedia/commons/7/73/ASCII.pdf",
             "http://upload.wikimedia.org/wikipedia/commons/f/fa/Equil.pdf",
             "http://upload.wikimedia.org/wikipedia/commons/0/0c/Contactangle.pdf"
         ],
-        "postscript" : [
+        "postscript": [
             "http://arxiv.org/hypertex/link.ps"
         ],
-        "rtf" : [
+        "rtf": [
             "https://dumps.wikimedia.org/other/surveys/editorsurvey2012/Wikipedia_Editor_Survey_2012_-_documentation.rtf"
         ],
-        "sla" : [
+        "sla": [
             "http://people.sc.fsu.edu/~jburkardt/data/stlb/cube.stl",
             "http://userpages.umbc.edu/~squire/download/cube2.stl",
             "https://raw.githubusercontent.com/pib/pycam/master/samples/Sphere0.stl"
         ],
-        "vnd.ms-cab-compressed" : [
+        "vnd.ms-cab-compressed": [
             "https://github.com/arisada/afl-fuzz/raw/master/testcases/archives/common/cab/small_archive.cab"
         ],
-        "vnd.ms-powerpoint" : [
+        "vnd.ms-powerpoint": [
             "https://upload.wikimedia.org/wikipedia/wikimania2006/c/c4/WM_2006_-_Security.ppt"
         ],
-        "vnd.oasis.opendocument.database" : [
+        "vnd.oasis.opendocument.database": [
             "http://ask.libreoffice.org/upfiles/14110339425827288.odb"
         ],
-        "vnd.oasis.opendocument.formula" : [
+        "vnd.oasis.opendocument.formula": [
             "https://github.com/javigomez/lib_tbs/raw/master/demo/demo_oo_formula.odf"
         ],
-        "vnd.oasis.opendocument.graphics" : [
+        "vnd.oasis.opendocument.graphics": [
             "http://ask.libreoffice.org/upfiles/13719228396115488.odg"
         ],
-        "vnd.oasis.opendocument.presentation" : [
+        "vnd.oasis.opendocument.presentation": [
             "http://ask.libreoffice.org/upfiles/13700816801195109.odp"
         ],
-        "vnd.oasis.opendocument.spreadsheet" : [
+        "vnd.oasis.opendocument.spreadsheet": [
             "https://transparency.wikimedia.org/data/data_aug2014.ods"
         ],
-        "vnd.oasis.opendocument.text" : [
+        "vnd.oasis.opendocument.text": [
             "http://upload.wikimedia.org/wikipedia/foundation/d/d1/WMF_Admin_Job_Advertisement_Head_of_Business_Development.odt"
         ],
-        "vnd.openxmlformats-officedocument.presentationml.presentation" : [
+        "vnd.openxmlformats-officedocument.presentationml.presentation": [
             "https://home.archive.org/~mang/local/amazon%20referral%20revenue_files/amazon%20referral%20revenue.pptx",
             "https://archive.org/download/2011-01-01WoordenLogos-rhema.pptx/2011-01-01WoordenLogos-rhema.pptx"
         ],
-        "vnd.openxmlformats-officedocument.spreadsheetml.sheet" : [
+        "vnd.openxmlformats-officedocument.spreadsheetml.sheet": [
             "http://ia801603.us.archive.org/13/items/UrduBooks_201302/TotalAyatInQuran.xlsx"
         ],
-        "vnd.openxmlformats-officedocument.wordprocessingml.document" : [
+        "vnd.openxmlformats-officedocument.wordprocessingml.document": [
             "http://arxiv.org/e-print/1009.4027v1.docx"
         ],
-        "x-compressed-tar" : [
+        "x-compressed-tar": [
             "https://sources.debian.net/src/bash/4.3-15/examples/complete/bashcc-1.0.1.tar.gz"
         ],
-        "x-dvi" : [
+        "x-dvi": [
             "http://arxiv.org/hypertex/link.dvi"
         ],
-        "x-rar" : [
+        "x-mobipocket-ebook": [
+            "http://www.gutenberg.org/cache/epub/1/pg1.mobi"
+        ],
+        "x-portabase": [],
+        "x-rar": [
             "https://github.com/arisada/afl-fuzz/raw/master/testcases/archives/common/rar/small_archive.rar"
         ],
-        "xml" : [
+        "x-shellscript": [
+            "http://download.savannah.gnu.org/releases/zdl/install_zdl.sh",
+            "http://download.savannah.gnu.org/releases/zdl/uninstall_zdl.sh"
+        ],
+        "x-tar": [
+            "https://golang.org/src/archive/tar/testdata/gnu.tar",
+            "https://golang.org/src/archive/tar/testdata/star.tar"
+        ],
+        "xml": [
             "https://github.com/supertuxkart/stk-code/raw/33defa44b72df986e4fcb4a01fb37f244296709b/lib/irrlicht/tests/media/attributes.xml",
             "https://github.com/supertuxkart/stk-code/raw/33defa44b72df986e4fcb4a01fb37f244296709b/lib/irrlicht/tests/media/cdata.xml",
             "https://github.com/supertuxkart/stk-code/raw/33defa44b72df986e4fcb4a01fb37f244296709b/lib/irrlicht/tests/media/test.xml"
         ],
-        "x-mobipocket-ebook" : [
-            "http://www.gutenberg.org/cache/epub/1/pg1.mobi"
-        ],
-        "x-portabase" : [
-        ],
-        "x-shellscript" : [
-            "http://download.savannah.gnu.org/releases/zdl/install_zdl.sh",
-            "http://download.savannah.gnu.org/releases/zdl/uninstall_zdl.sh"
-        ],
-        "x-tar" : [
-
-            "https://golang.org/src/archive/tar/testdata/gnu.tar",
-            "https://golang.org/src/archive/tar/testdata/star.tar"
-        ],
-        "zip" : [
+        "zip": [
             "https://golang.org/src/archive/zip/testdata/crc32-not-streamed.zip",
             "https://golang.org/src/archive/zip/testdata/dd.zip",
             "https://golang.org/src/archive/zip/testdata/unix.zip",
@@ -99,173 +97,173 @@
             "https://github.com/hyc/fcrackzip/raw/master/noradi.zip"
         ]
     },
-    "audio" : {
-        "aiff" : [
+    "audio": {
+        "aiff": [
             "http://tdwhs.nwasco.k12.or.us/staff/lewing/resources/sound/Pinball%20Beeper.aiff"
         ],
-        "flac" : [
+        "flac": [
             "http://upload.wikimedia.org/wikipedia/commons/b/b2/Bell-ring.flac"
         ],
-        "midi" : [
+        "midi": [
             "http://upload.wikimedia.org/wikipedia/commons/b/b0/%22Bebop-rebop%22_early_bop_phrase.mid"
         ],
-        "mpeg" : [
+        "mpeg": [
             "https://archive.org/download/scale1/s1.mp3"
         ],
-        "x-vorbis+ogg" : [
+        "x-vorbis+ogg": [
             "http://upload.wikimedia.org/wikipedia/commons/7/7f/Gliss.ogg"
         ],
-        "x-wav" : [
+        "x-wav": [
             "http://upload.wikimedia.org/wikipedia/commons/9/98/Beepalert.wav"
         ]
     },
-    "chemical" : {
-        "x-cif" : [
+    "chemical": {
+        "x-cif": [
             "https://raw.githubusercontent.com/bruceravel/demeter/master/examples/AuCl.cif",
             "http://www.nanocrystallography.org/cif/1/10/10/1101035.cif",
             "https://subversion.xor.aps.anl.gov/EXPGUI/gsas/all/training/alumina.cif"
         ],
-        "x-xyz" : [
+        "x-xyz": [
             "https://raw.githubusercontent.com/bruceravel/demeter/master/examples/recipes/Methyltin/methyltin.xyz",
             "https://raw.githubusercontent.com/bruceravel/XAS-Education/master/Talks/pimst/images/PbTiO3/list.xyz"
         ]
     },
-    "image" : {
-        "fits" : [
+    "image": {
+        "fits": [
             "http://fits.gsfc.nasa.gov/samples/WFPC2ASSNu5780205bx.fits"
         ],
-        "gif" : [
+        "gif": [
             "http://upload.wikimedia.org/wikipedia/commons/d/d7/123_Numbers.gif",
             "https://upload.wikimedia.org/wikipedia/commons/2/23/1x1.GIF",
             "https://upload.wikimedia.org/wikipedia/commons/c/ce/Transparent.gif",
             "https://upload.wikimedia.org/wikipedia/commons/6/61/24_3_2.gif",
             "https://commons.wikimedia.org/wiki/File:Green_bot_animated.gif"
         ],
-        "jp2" : [
+        "jp2": [
             "https://github.com/arisada/afl-fuzz/raw/master/testcases/images/jp2/not_kitty.jp2"
         ],
-        "jpeg" : [
+        "jpeg": [
             "https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/Kubuntu_15_04.jpeg/300px-Kubuntu_15_04.jpeg",
             "https://upload.wikimedia.org/wikipedia/en/4/48/Blank.JPG"
         ],
-        "png" : [
+        "png": [
             "http://upload.wikimedia.org/wikipedia/commons/2/23/050329-birthday1.png",
             "https://upload.wikimedia.org/wikipedia/commons/c/ca/1x1.png",
             "https://upload.wikimedia.org/wikipedia/commons/e/e1/Invisible.png"
         ],
-        "svg+xml" : [
+        "svg+xml": [
             "http://upload.wikimedia.org/wikipedia/commons/5/57/Color_icon_white.svg",
             "http://upload.wikimedia.org/wikipedia/commons/f/fd/Animated_pendulum.svg"
         ],
-        "tiff" : [
+        "tiff": [
             "https://commons.wikimedia.org/wiki/File:Cavity_wind_tunnel_setup.tiff",
             "https://upload.wikimedia.org/wikipedia/commons/1/15/The_others.tiff",
             "https://github.com/arisada/afl-fuzz/raw/master/testcases/images/tiff/not_kitty.tiff"
         ],
-        "vnd.djvu" : [
+        "vnd.djvu": [
             "https://commons.wikimedia.org/wiki/File:Congruence_properties_of_partitions.djvu"
         ],
-        "vnd.microsoft.icon" : [
+        "vnd.microsoft.icon": [
             "https://github.com/arisada/afl-fuzz/raw/master/testcases/images/ico/not_kitty.ico"
         ],
-        "vnd.mozilla.apng" : [
+        "vnd.mozilla.apng": [
             "https://people-mozilla.org/~dolske/apng/demo-1.png",
             "https://philip.html5.org/tests/apng/025.png",
             "https://upload.wikimedia.org/wikipedia/commons/b/b5/Load.png",
             "https://upload.wikimedia.org/wikipedia/commons/b/bd/Blueball.png"
         ],
-        "x-eps" : [
+        "x-eps": [
             "http://arxiv.org/html/cond-mat/9903007v4/fig3.eps"
         ],
-        "x-ms-bmp" : [
+        "x-ms-bmp": [
             "https://raw.githubusercontent.com/arisada/afl-fuzz/master/testcases/images/bmp/not_kitty.bmp"
         ]
     },
-    "message" : {
-        "rfc822" : [
+    "message": {
+        "rfc822": [
             "https://raw.githubusercontent.com/danchoi/min_mail/master/test/fixtures/reply_all.eml",
             "https://raw.githubusercontent.com/bigohstudios/tictactoe/master/spam/TESTING/TEST_00731.eml"
         ]
     },
-    "model" : {
-        "iges" : [
-		"https://github.com/robEllenberg/MATLAB/raw/80fa514e39e134864d202e2134099b7d05402619/toolbox/igesToolBox/example2.igs"
-	],
-        "vrml" : [
+    "model": {
+        "iges": [
+            "https://github.com/robEllenberg/MATLAB/raw/80fa514e39e134864d202e2134099b7d05402619/toolbox/igesToolBox/example2.igs"
+        ],
+        "vrml": [
             "http://www.web3d.org/x3d-resources/content/examples/HelloWorld.wrl",
             "https://sources.debian.net/src/kicad/4.0.2%2Bdfsg1-4/library/kicad-library-master/modules/packages3d/Connect.3dshapes/PINTST.wrl/"
         ],
-        "x3d+binary" : [
+        "x3d+binary": [
             "http://www.web3d.org/x3d-resources/content/examples/HelloWorld.x3db"
         ],
-        "x3d+xml" : [
+        "x3d+xml": [
             "http://www.web3d.org/x3d-resources/content/examples/HelloWorld.x3d"
         ]
     },
-    "text" : {
-        "calendar" : [
+    "text": {
+        "calendar": [
             "https://raw.githubusercontent.com/libical/libical/master/test-data/calendar.ics",
             "https://raw.githubusercontent.com/collective/icalendar/master/src/icalendar/tests/encoding.ics"
         ],
-        "css" : [
+        "css": [
             "http://dir.w3.org/directory/css/directory-listing.css",
             "http://dir.w3.org/themes/2014/w3/styles/w3-styles-css.css"
         ],
-        "csv" : [
+        "csv": [
             "https://github.com/openmundi/world.csv/raw/master/countries(204)_olympics.csv"
         ],
-        "html" : [
+        "html": [
             "http://info.cern.ch/",
             "http://www.ic.unicamp.br/~stolfi/EXPORT/www/ISO-8859-1-Encoding.html",
             "http://jblevins.org/log/xml-tools"
         ],
-        "plain" : [
+        "plain": [
             "http://mako.cc/projects/utf8-tests/UTF-8-i_eat_glass.txt",
             "http://www.gutenberg.org/cache/epub/1/pg1.txt",
             "https://gist.githubusercontent.com/morganp/1108187/raw/f50c16cfc85650d20736b70a2e28387c4bb8e64d/fstab"
         ],
-        "tab-separated-values" : [
+        "tab-separated-values": [
             "https://www.cs.tut.fi/~jkorpela/tsv.tsv"
         ],
-        "troff" : [
+        "troff": [
             "http://git.savannah.gnu.org/cgit/groff.git/plain/src/roff/troff/troff.1.man"
         ],
-        "vcard" : [
+        "vcard": [
             "https://github.com/mangstadt/ez-vcard/raw/master/src/test/resources/ezvcard/io/text/rfc6350-example.vcf",
             "https://github.com/mangstadt/ez-vcard/raw/master/src/test/resources/ezvcard/io/text/rfc2426-example.vcf"
         ],
-        "x-bibtex" : [
+        "x-bibtex": [
             "https://sources.debian.net/data/main/t/texlive-base/2016.20160623-1/texmf-dist/bibtex/bib/base/xampl.bib"
         ],
-        "x-csrc" : [
-            "https://git.kernel.org/cgit/linux/kernel/git/stable/linux-stable.git/plain/lib/gcd.c?id=refs/tags/v4.6.3"
-        ],
-        "x-c++src" : [
+        "x-c++src": [
             "https://mattmccutchen.net/bigint/bigint.git/blob_plain/HEAD:/sample.cc",
             "https://github.com/dryproject/libcpr/raw/master/src/cpr/feature.cc"
         ],
-        "x-java" : [
+        "x-csrc": [
+            "https://git.kernel.org/cgit/linux/kernel/git/stable/linux-stable.git/plain/lib/gcd.c?id=refs/tags/v4.6.3"
+        ],
+        "x-java": [
             "https://github.com/vladdu/jsched/raw/master/src/jsched/MailBox.java"
         ],
-        "x-makefile" : [
+        "x-makefile": [
             "https://git.kernel.org/cgit/linux/kernel/git/stable/linux-stable.git/plain/kernel/Makefile?id=refs/tags/v4.6.3"
         ],
-        "x-python" : [
+        "x-python": [
             "https://svn.python.org/projects/python/trunk/Lib/antigravity.py",
             "https://svn.python.org/projects/python/trunk/Lib/this.py"
         ],
-        "x-tex" : [
+        "x-tex": [
             "http://www-cs-faculty.stanford.edu/~uno/plain.tex"
         ]
     },
-    "video" : {
-        "mp4" : [
+    "video": {
+        "mp4": [
             "https://github.com/arisada/afl-fuzz/raw/master/testcases/multimedia/h264/small_movie.mp4"
         ],
-        "quicktime" : [
+        "quicktime": [
             "http://tdwhs.nwasco.k12.or.us/staff/lewing/resources/movies/SplatterPaint.mov"
         ],
-        "x-theora+ogg" : [
+        "x-theora+ogg": [
             "http://upload.wikimedia.org/wikipedia/commons/b/bb/Triple_conj.ogg"
         ]
     }
