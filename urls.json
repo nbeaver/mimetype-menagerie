@@ -168,6 +168,12 @@
         "vnd.microsoft.icon" : [
             "https://github.com/arisada/afl-fuzz/raw/master/testcases/images/ico/not_kitty.ico"
         ],
+        "vnd.mozilla.apng" : [
+            "https://people-mozilla.org/~dolske/apng/demo-1.png",
+            "https://philip.html5.org/tests/apng/025.png",
+            "https://upload.wikimedia.org/wikipedia/commons/b/b5/Load.png",
+            "https://upload.wikimedia.org/wikipedia/commons/b/bd/Blueball.png"
+        ],
         "x-eps" : [
             "http://arxiv.org/html/cond-mat/9903007v4/fig3.eps"
         ],
