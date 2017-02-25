@@ -18,6 +18,7 @@ application/vnd.openxmlformats-officedocument.spreadsheetml.sheet
 application/vnd.openxmlformats-officedocument.wordprocessingml.document
 application/x-cab
 application/x-dvi
+application/x-iso9660-image
 application/x-tar
 application/x-troff-man
 application/x-xcf
