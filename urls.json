@@ -177,6 +177,10 @@
         ],
         "x-ms-bmp": [
             "https://raw.githubusercontent.com/arisada/afl-fuzz/master/testcases/images/bmp/not_kitty.bmp"
+        ],
+        "x-xcf": [
+            "https://upload.wikimedia.org/wikipedia/commons/e/e2/Blank_file.xcf",
+            "https://upload.wikimedia.org/wikipedia/commons/1/11/Chess_board_in_grayscale_in_XCF_with_XCF%27s_Run-length_encoding.xcf"
         ]
     },
     "message": {

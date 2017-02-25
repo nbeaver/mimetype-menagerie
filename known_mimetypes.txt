@@ -20,6 +20,7 @@ application/x-cab
 application/x-dvi
 application/x-tar
 application/x-troff-man
+application/x-xcf
 application/xml
 application/zip
 audio/flac
