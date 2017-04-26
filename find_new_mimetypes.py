@@ -19,12 +19,18 @@ def get_known_mimetypes(mimetypes_fp):
         mimetypes.add(line.strip())
     return mimetypes
 
-def get_unknown_mimetypes(known, print_on_the_fly=False):
+def get_unknown_mimetypes(known, narrow_top_level=None, print_on_the_fly=False):
     new_mimetypes = set()
     for dirpath, dirnames, filenames in os.walk(args.rootdir):
         for filename in filenames:
             filepath = os.path.join(dirpath, filename)
             mimetype, encoding = mimetypes.guess_type(filename)
+
+            if mimetype:
+                top_level, subtype = mimetype.split('/')
+            else:
+                top_level, subtype = None, None
+
             if mimetype is None:
                 # Mimetype could not be determined, so try next file.
                 continue
@@ -34,13 +40,32 @@ def get_unknown_mimetypes(known, print_on_the_fly=False):
             elif mimetype in new_mimetypes:
                 # Mimetype was previously encountered, so skip to next file.
                 continue
-            else:
-                new_mimetypes.add(mimetype)
-                if print_on_the_fly:
-                    sys.stdout.write('{}\t{}\n'.format(mimetype, filepath))
-                    sys.stdout.flush()
+            elif narrow_top_level:
+                if top_level != narrow_top_level:
+                    continue
+
+            new_mimetypes.add(mimetype)
+            if print_on_the_fly:
+                sys.stdout.write('{}\t{}\n'.format(mimetype, filepath))
+                sys.stdout.flush()
 
     return new_mimetypes
+
+top_level_types = [
+    'application',
+    'audio',
+    'chemical',
+    'drawing',
+    'example',
+    'font',
+    'image',
+    'inode',
+    'message',
+    'model',
+    'multipart',
+    'text',
+    'video'
+]
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser(
@@ -54,9 +79,13 @@ if __name__ == '__main__':
         type=readable_directory,
         help='Root directory to start looking for new mimetypes.'
     )
+    parser.add_argument('-t', '--toplevel',
+        help='Restrict to one top level type',
+        choices=top_level_types
+    )
 
     args = parser.parse_args()
 
     known_mimetypes = get_known_mimetypes(args.known_mimetypes_file)
 
-    get_unknown_mimetypes(known_mimetypes, print_on_the_fly=True)
+    get_unknown_mimetypes(known_mimetypes, args.toplevel, print_on_the_fly=True)
