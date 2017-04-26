@@ -19,7 +19,7 @@ def get_known_mimetypes(mimetypes_fp):
         mimetypes.add(line.strip())
     return mimetypes
 
-def print_unknown_mimetypes(known):
+def get_unknown_mimetypes(known, print_on_the_fly=False):
     new_mimetypes = set()
     for dirpath, dirnames, filenames in os.walk(args.rootdir):
         for filename in filenames:
@@ -36,8 +36,11 @@ def print_unknown_mimetypes(known):
                 continue
             else:
                 new_mimetypes.add(mimetype)
-                sys.stdout.write('{}\t{}\n'.format(mimetype, filepath))
-                sys.stdout.flush()
+                if print_on_the_fly:
+                    sys.stdout.write('{}\t{}\n'.format(mimetype, filepath))
+                    sys.stdout.flush()
+
+    return new_mimetypes
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser(
@@ -56,4 +59,4 @@ if __name__ == '__main__':
 
     known_mimetypes = get_known_mimetypes(args.known_mimetypes_file)
 
-    print_unknown_mimetypes(known_mimetypes)
+    get_unknown_mimetypes(known_mimetypes, print_on_the_fly=True)
