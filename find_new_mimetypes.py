@@ -25,7 +25,16 @@ def print_unknown_mimetypes(known):
         for filename in filenames:
             filepath = os.path.join(dirpath, filename)
             mimetype, encoding = mimetypes.guess_type(filename)
-            if mimetype is not None and mimetype not in known_mimetypes and mimetype not in new_mimetypes:
+            if mimetype is None:
+                # Mimetype could not be determined, so try next file.
+                continue
+            elif mimetype in known_mimetypes:
+                # Mimetype is already known, so skip to next file.
+                continue
+            elif mimetype in new_mimetypes:
+                # Mimetype was previously encountered, so skip to next file.
+                continue
+            else:
                 new_mimetypes.add(mimetype)
                 sys.stdout.write('{}\t{}\n'.format(mimetype, filepath))
                 sys.stdout.flush()
