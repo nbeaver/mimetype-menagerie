@@ -175,7 +175,7 @@
         "x-eps": [
             "http://arxiv.org/html/cond-mat/9903007v4/fig3.eps"
         ],
-        "x-ms-bmp": [
+        "bmp": [
             "https://raw.githubusercontent.com/arisada/afl-fuzz/master/testcases/images/bmp/not_kitty.bmp"
         ],
         "x-xcf": [
