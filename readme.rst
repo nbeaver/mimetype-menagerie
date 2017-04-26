@@ -29,14 +29,14 @@ In order of priority:
 Is that possible?
 -----------------
 
-The IANA lists `about 1500 registered mimetypes`_,
-some of which are deprecated.
+The IANA lists `about 1700 registered mimetypes`_,
+some of which are deprecated or duplicates.
 There are many more which are unofficial.
 
 It's a big job, but not impossible.
 See the `coverage report`_ for details.
 
-.. _about 1500 registered mimetypes: https://www.iana.org/assignments/media-types/media-types.xhtml
+.. _about 1700 registered mimetypes: https://www.iana.org/assignments/media-types/media-types.xhtml
 .. _coverage report: coverage_report.txt
 
 ---------------
