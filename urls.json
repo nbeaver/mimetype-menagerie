@@ -172,6 +172,9 @@
             "https://upload.wikimedia.org/wikipedia/commons/b/b5/Load.png",
             "https://upload.wikimedia.org/wikipedia/commons/b/bd/Blueball.png"
         ],
+        "webp": [
+            "https://raw.githubusercontent.com/arisada/afl-fuzz/master/testcases/images/webp/not_kitty.webp"
+        ],
         "x-eps": [
             "http://arxiv.org/html/cond-mat/9903007v4/fig3.eps"
         ],
