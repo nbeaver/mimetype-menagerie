@@ -6,14 +6,18 @@ import sys
 import mimetypes
 import argparse
 
+def readable_directory(path):
+    if not os.path.isdir(path):
+        raise argparse.ArgumentTypeError('not an existing directory: {}'.format(path))
+    if not os.access(path, os.R_OK):
+        raise argparse.ArgumentTypeError('not a readable directory: {}'.format(path))
+    return path
+
 if __name__ == '__main__':
     parser = argparse.ArgumentParser(description='For discovering mimetypes not already in the mimetype menagerie')
     parser.add_argument('known_mimetypes_filepath', type=argparse.FileType('r'), help='Path to text file with list of known mimetypes.')
-    parser.add_argument('rootdir', help='Root directory to start looking for new mimetypes.')
+    parser.add_argument('rootdir', type=readable_directory, help='Root directory to start looking for new mimetypes.')
     args = parser.parse_args()
-    if not os.path.isdir(args.rootdir):
-        sys.stderr.write("Error: not a directory: {}\n".format(args.rootdir))
-        sys.exit(1)
 
     known_mimetypes = set()
     with args.known_mimetypes_filepath as mimefile:
