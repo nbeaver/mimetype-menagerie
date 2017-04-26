@@ -13,16 +13,19 @@ def readable_directory(path):
         raise argparse.ArgumentTypeError('not a readable directory: {}'.format(path))
     return path
 
+def get_known_mimetypes(mimetypes_fp):
+    mimetypes = set()
+    for line in mimetypes_fp.readlines():
+        mimetypes.add(line.strip())
+    return mimetypes
+
 if __name__ == '__main__':
     parser = argparse.ArgumentParser(description='For discovering mimetypes not already in the mimetype menagerie')
-    parser.add_argument('known_mimetypes_filepath', type=argparse.FileType('r'), help='Path to text file with list of known mimetypes.')
+    parser.add_argument('known_mimetypes_file', type=argparse.FileType('r'), help='Path to text file with list of known mimetypes.')
     parser.add_argument('rootdir', type=readable_directory, help='Root directory to start looking for new mimetypes.')
     args = parser.parse_args()
 
-    known_mimetypes = set()
-    with args.known_mimetypes_filepath as mimefile:
-        for line in mimefile.readlines():
-            known_mimetypes.add(line.strip())
+    known_mimetypes = get_known_mimetypes(args.known_mimetypes_file)
 
     new_mimetypes = set()
     for dirpath, dirnames, filenames in os.walk(args.rootdir):
