@@ -31,9 +31,18 @@ def print_unknown_mimetypes(known):
                 sys.stdout.flush()
 
 if __name__ == '__main__':
-    parser = argparse.ArgumentParser(description='For discovering mimetypes not already in the mimetype menagerie')
-    parser.add_argument('known_mimetypes_file', type=argparse.FileType('r'), help='Path to text file with list of known mimetypes.')
-    parser.add_argument('rootdir', type=readable_directory, help='Root directory to start looking for new mimetypes.')
+    parser = argparse.ArgumentParser(
+        description='For discovering mimetypes not already in the mimetype menagerie'
+    )
+    parser.add_argument('known_mimetypes_file',
+        type=argparse.FileType('r'),
+        help='Path to text file with list of known mimetypes.'
+    )
+    parser.add_argument('rootdir',
+        type=readable_directory,
+        help='Root directory to start looking for new mimetypes.'
+    )
+
     args = parser.parse_args()
 
     known_mimetypes = get_known_mimetypes(args.known_mimetypes_file)
