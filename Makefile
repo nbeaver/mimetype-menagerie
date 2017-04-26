@@ -2,8 +2,8 @@
 validate-local : warnings.txt readme.html todo.html known_mimetypes.txt coverage_report.txt
 
 .PHONY : validate-remote
-validate-remote: check-urls.py urls.json
-	python3 check-urls.py urls.json
+validate-remote: url_check.py urls.json
+	./url_check.py urls.json
 
 warnings.txt : check-mimetypes.py media-types/*/*
 	python3 check-mimetypes.py media-types/ > warnings.txt
@@ -22,4 +22,4 @@ coverage_report.txt : generate_coverage_report.py media-types/*/* iana/*.csv
 
 .PHONY : clean
 clean:
-	rm --force warnings.txt check-urls.py.out todo.html readme.html coverage_report.txt
+	rm --force warnings.txt todo.html readme.html coverage_report.txt
