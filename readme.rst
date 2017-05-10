@@ -98,3 +98,8 @@ has a number of testcases,
 such as archives and image formats:
 
 https://github.com/loverszhaokai/AFL/tree/master/testcases
+
+The FFMPEG project has a compendium of video files,
+though it's unclear how many are public domain.
+
+http://samples.ffmpeg.org/
