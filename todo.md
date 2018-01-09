@@ -7,7 +7,7 @@ Mimetypes to add
     - [x] [`application/zip`](media-types/application/zip/) Zip file ([`.zip`](https://en.wikipedia.org/wiki/Zip_%28file_format%29))
     - [x] [`application/x-compressed-tar`](media-types/application/x-compressed-tar/) Gzipped tar file ([`.tar`](https://en.wikipedia.org/wiki/Tar_%28computing%29)[`.gz`](https://en.wikipedia.org/wiki/Gzip))
     - [ ] [DAISY e-book files](https://bugs.freedesktop.org/show_bug.cgi?id=91873)
-    - [ ] `application/x-iso9660-image` ISO disk image ([`.iso`](https://en.wikipedia.org/wiki/ISO_image))
+    - [x] `application/x-iso9660-image` ISO disk image ([`.iso`](https://en.wikipedia.org/wiki/ISO_image))
         - Hard to find files of reasonable size.
     - [ ] `application/x-dbf` dBASE database files ([`.dbf`](https://en.wikipedia.org/wiki/.dbf))
     - [x] `application/vnd.ms-cab-compressed` Microsoft Windows Cabinet archive format ([`.cab`](https://en.wikipedia.org/wiki/Cabinet_%28file_format%29)) 
