@@ -1,5 +1,7 @@
 Name,Template,Reference
+3mf,model/3mf,[http://www.3mf.io/specification][_3MF][Michael_Sweet]
 example,model/example,[RFC4735]
+gltf-binary,model/gltf-binary,[Khronos][Saurabh_Bhatia]
 gltf+json,model/gltf+json,[Khronos][Uli_Klumpp]
 iges,model/iges,[Curtis_Parks]
 mesh,,[RFC2077]
