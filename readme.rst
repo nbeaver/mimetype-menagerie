@@ -103,3 +103,11 @@ The FFMPEG project has a compendium of video files,
 though it's unclear how many are public domain.
 
 http://samples.ffmpeg.org/
+
+Alex Schiller's `file format commons` is similar,
+though is not organized by mimetype.
+
+.. _file format commons: https://github.com/alexschiller/file-format-commons
+
+The `test documents for Apache's Tika parsers`_ are not organized by mimetype,
+but are impressively comprehensive.

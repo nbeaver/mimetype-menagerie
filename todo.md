@@ -42,6 +42,9 @@ Mimetypes to add
     - `text/x-diff`
     - `text/x-perl`
 
+- [ ] Add files from [file-format-commons](https://github.com/alexschiller/file-format-commons)
+- [ ] Add files from [tika test-documents](https://github.com/apache/tika/tree/master/tika-parsers/src/test/resources/test-documents)
+
 ----------
 Validation
 ----------
