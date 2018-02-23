@@ -8,6 +8,12 @@
             "http://dir.w3.org/directory/libs/js/jquery.base64.min.js",
             "http://dir.w3.org/themes/2014/w3/js/popover.js"
         ],
+        "marc": [
+            "https://www.loc.gov/standards/marcxml/Sandburg/sandburg.mrc"
+        ],
+        "marcxml+xml": [
+            "https://www.loc.gov/standards/marcxml/Sandburg/sandburg.xml"
+        ],
         "msword": [
             "https://upload.wikimedia.org/wikipedia/foundation/a/a2/OracleForm.doc"
         ],
