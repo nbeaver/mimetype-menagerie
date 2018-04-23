@@ -134,6 +134,11 @@
             "https://raw.githubusercontent.com/bruceravel/XAS-Education/master/Talks/pimst/images/PbTiO3/list.xyz"
         ]
     },
+    "font": {
+        "otf": [
+            "https://github.com/powerline/powerline/blob/e52754d5c5c6a82238b43a5687a5c4c647c9ebc1/font/PowerlineSymbols.otf"
+        ]
+    },
     "image": {
         "fits": [
             "http://fits.gsfc.nasa.gov/samples/WFPC2ASSNu5780205bx.fits"
