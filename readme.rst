@@ -113,3 +113,7 @@ The `test documents for Apache's Tika parsers`_ are not organized by mimetype,
 but are impressively comprehensive.
 
 .. _test documents for Apache's Tika parsers: https://github.com/apache/tika/tree/master/tika-parsers/src/test/resources/test-documents
+
+Ubuntu includes the ``example-content`` package.
+
+https://wiki.ubuntu.com/ExampleContent
