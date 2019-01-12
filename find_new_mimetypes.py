@@ -39,6 +39,7 @@ def get_unknown_mimetypes(known, narrow_top_level=None, print_on_the_fly=False):
                 continue
             elif mimetype in new_mimetypes:
                 # Mimetype was previously encountered, so skip to next file.
+                # TODO: make this behavior optional
                 continue
             elif narrow_top_level:
                 if top_level != narrow_top_level:
@@ -46,6 +47,7 @@ def get_unknown_mimetypes(known, narrow_top_level=None, print_on_the_fly=False):
 
             new_mimetypes.add(mimetype)
             if print_on_the_fly:
+                # TODO: use yield instead
                 sys.stdout.write('{}\t{}\n'.format(mimetype, filepath))
                 sys.stdout.flush()
 
