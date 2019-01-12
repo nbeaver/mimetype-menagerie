@@ -1,34 +1,12 @@
-CSV := application.csv audio.csv font.csv image.csv message.csv model.csv multipart.csv text.csv video.csv
-DOWNLOAD := wget --no-verbose
+WGET_FLAGS :=--execute robots=off --recursive --level=2 --no-parent --no-directories --accept '*.csv'
+URL :='https://www.iana.org/assignments/media-types/'
 
-all : $(CSV)
+download-quiet :
+	wget $(WGET_FLAGS) --quiet $(URL)
 
-application.csv :
-	$(DOWNLOAD) 'http://www.iana.org/assignments/media-types/application.csv'
+download-no-verbose :
+	wget $(WGET_FLAGS) --no-verbose $(URL)
 
-audio.csv :
-	$(DOWNLOAD) 'http://www.iana.org/assignments/media-types/audio.csv'
-
-font.csv :
-	$(DOWNLOAD) 'http://www.iana.org/assignments/media-types/font.csv'
-
-image.csv :
-	$(DOWNLOAD) 'http://www.iana.org/assignments/media-types/image.csv'
-
-message.csv :
-	$(DOWNLOAD) 'http://www.iana.org/assignments/media-types/message.csv'
-
-model.csv :
-	$(DOWNLOAD) 'http://www.iana.org/assignments/media-types/model.csv'
-
-multipart.csv :
-	$(DOWNLOAD) 'http://www.iana.org/assignments/media-types/multipart.csv'
-
-text.csv :
-	$(DOWNLOAD) 'http://www.iana.org/assignments/media-types/text.csv'
-
-video.csv :
-	$(DOWNLOAD) 'http://www.iana.org/assignments/media-types/video.csv'
-
+CSV :=$(wildcard *.csv)
 clean :
-	rm -f $(CSV)
+	rm -f -- $(CSV)
