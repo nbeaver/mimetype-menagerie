@@ -23,10 +23,13 @@ def get_known_mimetypes(mimetypes_fp):
 def get_unknown_mimetypes(
         known,
         narrow_top_level=None,
-        suppress_repeats=True
+        suppress_repeats=True,
+        suppress_larger=True,
     ):
 
     new_mimetypes = set()
+    if suppress_larger:
+        smallest_so_far = {}
     for dirpath, dirnames, filenames in os.walk(args.rootdir):
         for filename in filenames:
             filepath = os.path.join(dirpath, filename)
@@ -58,9 +61,24 @@ def get_unknown_mimetypes(
                 # Mimetype was previously encountered, so skip to next.
                 logging.debug("suppressing already found mimetype '{}' from file '{}'".format(mimetype, filepath))
                 continue
+            elif mimetype in new_mimetypes and suppress_larger:
+                size_bytes = os.stat(filepath).st_size
+                try :
+                    if size_bytes > smallest_so_far[mimetype]:
+                        logging.debug("suppressing file '{}' with mimimetype '{}' since {} > {}".format(filepath, mimetype, size_bytes, smallest_so_far[mimetype]))
+                        continue
+                except KeyError:
+                    pass
 
             # Might as well add the mimetype now.
             new_mimetypes.add(mimetype)
+            if suppress_larger:
+                size_bytes = os.stat(filepath).st_size
+                if mimetype in smallest_so_far:
+                    if size_bytes < smallest_so_far[mimetype]:
+                        smallest_so_far[mimetype] = size_bytes
+                else:
+                    smallest_so_far[mimetype] = size_bytes
 
             yield mimetype, filepath
 
@@ -101,6 +119,11 @@ if __name__ == '__main__':
         action='store_true',
         default=False,
     )
+    parser.add_argument('-l', '--suppress-larger',
+        help='Suppress printing of larger files than those seen so far',
+        action='store_true',
+        default=False,
+    )
     parser.add_argument(
         '-v',
         '--verbose',
@@ -123,6 +146,11 @@ if __name__ == '__main__':
 
     known_mimetypes = get_known_mimetypes(args.known_mimetypes_file)
 
-    for mimetype, filepath in get_unknown_mimetypes(known=known_mimetypes, narrow_top_level=args.toplevel, suppress_repeats=args.suppress_repeats):
+    for mimetype, filepath in get_unknown_mimetypes(
+        known=known_mimetypes,
+        narrow_top_level=args.toplevel,
+        suppress_repeats=args.suppress_repeats,
+        suppress_larger=args.suppress_larger
+        ):
         sys.stdout.write('{}\t{}\n'.format(mimetype, filepath))
         sys.stdout.flush()
