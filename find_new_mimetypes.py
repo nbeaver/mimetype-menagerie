@@ -24,6 +24,9 @@ def get_unknown_mimetypes(known, narrow_top_level=None, print_on_the_fly=False):
     for dirpath, dirnames, filenames in os.walk(args.rootdir):
         for filename in filenames:
             filepath = os.path.join(dirpath, filename)
+            # TODO: measure size in bytes like this:
+            # size_bytes = os.stat(filepath).st_size
+            # then only show duplicate files if they are smaller.
             mimetype, encoding = mimetypes.guess_type(filename)
 
             if mimetype:
