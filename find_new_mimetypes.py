@@ -19,7 +19,7 @@ def get_known_mimetypes(mimetypes_fp):
         mimetypes.add(line.strip())
     return mimetypes
 
-def get_unknown_mimetypes(known, narrow_top_level=None, print_on_the_fly=False):
+def get_unknown_mimetypes(known, narrow_top_level=None, print_on_the_fly=False, print_all=False):
     new_mimetypes = set()
     for dirpath, dirnames, filenames in os.walk(args.rootdir):
         for filename in filenames:
@@ -37,18 +37,21 @@ def get_unknown_mimetypes(known, narrow_top_level=None, print_on_the_fly=False):
             if mimetype is None:
                 # Mimetype could not be determined, so try next file.
                 continue
-            elif mimetype in known_mimetypes:
+            elif mimetype in known:
                 # Mimetype is already known, so skip to next file.
                 continue
-            elif mimetype in new_mimetypes:
-                # Mimetype was previously encountered, so skip to next file.
-                # TODO: make this behavior optional
-                continue
-            elif narrow_top_level:
+            elif narrow_top_level is not None:
+                # We are only interested in e.g. 'audio' mimetypes.
                 if top_level != narrow_top_level:
+                    # No match, so skip this one.
+                    continue
+            elif mimetype in new_mimetypes:
+                if not print_all:
+                    # Mimetype was previously encountered, so skip to next file.
                     continue
 
             new_mimetypes.add(mimetype)
+
             if print_on_the_fly:
                 # TODO: use yield instead
                 sys.stdout.write('{}\t{}\n'.format(mimetype, filepath))
@@ -88,9 +91,18 @@ if __name__ == '__main__':
         help='Restrict to one top level type',
         choices=top_level_types
     )
+    parser.add_argument('-a', '--print-all',
+        help='Print duplicate mimetypes',
+        action='store_true'
+    )
 
     args = parser.parse_args()
 
     known_mimetypes = get_known_mimetypes(args.known_mimetypes_file)
 
-    get_unknown_mimetypes(known_mimetypes, args.toplevel, print_on_the_fly=True)
+    get_unknown_mimetypes(
+        known=known_mimetypes,
+        narrow_top_level=args.toplevel,
+        print_on_the_fly=True,
+        print_all=args.print_all
+    )
