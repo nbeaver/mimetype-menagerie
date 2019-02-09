@@ -5,6 +5,7 @@ import os
 import sys
 import mimetypes
 import argparse
+import logging
 
 def readable_directory(path):
     if not os.path.isdir(path):
@@ -22,8 +23,7 @@ def get_known_mimetypes(mimetypes_fp):
 def get_unknown_mimetypes(
         known,
         narrow_top_level=None,
-        print_on_the_fly=False,
-        print_all=False
+        suppress_repeats=True
     ):
 
     new_mimetypes = set()
@@ -42,28 +42,27 @@ def get_unknown_mimetypes(
 
             if mimetype is None:
                 # Mimetype could not be determined, so try next file.
+                logging.debug("mimetype is 'None' for file '{}'".format(filepath))
                 continue
             elif mimetype in known:
                 # Mimetype is already known, so skip to next file.
+                logging.debug("already known mimetype '{}' for file '{}'".format(mimetype, filepath))
                 continue
             elif narrow_top_level is not None:
                 # We are only interested in e.g. 'audio' mimetypes.
                 if top_level != narrow_top_level:
+                    logging.debug("mimetype '{}' for file '{}' does not match top-level '{}'".format(mimetype, filepath, narrow_top_level))
                     # No match, so skip this one.
                     continue
-            elif mimetype in new_mimetypes:
-                if not print_all:
-                    # Mimetype was previously encountered, so skip to next file.
-                    continue
+            elif mimetype in new_mimetypes and suppress_repeats:
+                # Mimetype was previously encountered, so skip to next.
+                logging.debug("suppressing already found mimetype '{}' from file '{}'".format(mimetype, filepath))
+                continue
 
+            # Might as well add the mimetype now.
             new_mimetypes.add(mimetype)
 
-            if print_on_the_fly:
-                # TODO: use yield instead
-                sys.stdout.write('{}\t{}\n'.format(mimetype, filepath))
-                sys.stdout.flush()
-
-    return new_mimetypes
+            yield mimetype, filepath
 
 top_level_types = [
     'application',
@@ -97,18 +96,33 @@ if __name__ == '__main__':
         help='Restrict to one top level type',
         choices=top_level_types
     )
-    parser.add_argument('-a', '--print-all',
-        help='Print duplicate mimetypes',
-        action='store_true'
+    parser.add_argument('-s', '--suppress-repeats',
+        help='Suppress printing of duplicate mimetypes',
+        action='store_true',
+        default=False,
     )
-
+    parser.add_argument(
+        '-v',
+        '--verbose',
+        help='More verbose logging',
+        dest="loglevel",
+        default=logging.WARNING,
+        action="store_const",
+        const=logging.INFO,
+    )
+    parser.add_argument(
+        '-d',
+        '--debug',
+        help='Enable debugging logs',
+        action="store_const",
+        dest="loglevel",
+        const=logging.DEBUG,
+    )
     args = parser.parse_args()
+    logging.basicConfig(level=args.loglevel)
 
     known_mimetypes = get_known_mimetypes(args.known_mimetypes_file)
 
-    get_unknown_mimetypes(
-        known=known_mimetypes,
-        narrow_top_level=args.toplevel,
-        print_on_the_fly=True,
-        print_all=args.print_all
-    )
+    for mimetype, filepath in get_unknown_mimetypes(known=known_mimetypes, narrow_top_level=args.toplevel, suppress_repeats=args.suppress_repeats):
+        sys.stdout.write('{}\t{}\n'.format(mimetype, filepath))
+        sys.stdout.flush()
