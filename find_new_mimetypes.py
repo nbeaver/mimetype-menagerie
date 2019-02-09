@@ -62,7 +62,12 @@ def get_unknown_mimetypes(
                 logging.debug("suppressing already found mimetype '{}' from file '{}'".format(mimetype, filepath))
                 continue
             elif mimetype in new_mimetypes and suppress_larger:
-                size_bytes = os.stat(filepath).st_size
+                try:
+                    size_bytes = os.stat(filepath).st_size
+                except FileNotFoundError:
+                    logging.info("could not stat file '{}'".format(mimetype, filepath))
+                    # Skip it, it's probably a broken symbolic link.
+                    continue
                 try :
                     if size_bytes > smallest_so_far[mimetype]:
                         logging.debug("suppressing file '{}' with mimimetype '{}' since {} > {}".format(filepath, mimetype, size_bytes, smallest_so_far[mimetype]))
