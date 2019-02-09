@@ -19,7 +19,13 @@ def get_known_mimetypes(mimetypes_fp):
         mimetypes.add(line.strip())
     return mimetypes
 
-def get_unknown_mimetypes(known, narrow_top_level=None, print_on_the_fly=False, print_all=False):
+def get_unknown_mimetypes(
+        known,
+        narrow_top_level=None,
+        print_on_the_fly=False,
+        print_all=False
+    ):
+
     new_mimetypes = set()
     for dirpath, dirnames, filenames in os.walk(args.rootdir):
         for filename in filenames:
