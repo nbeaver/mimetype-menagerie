@@ -104,7 +104,7 @@ though it's unclear how many are public domain.
 
 http://samples.ffmpeg.org/
 
-Alex Schiller's `file format commons` is similar,
+Alex Schiller's `file format commons`_ is similar,
 though is not organized by mimetype.
 
 .. _file format commons: https://github.com/alexschiller/file-format-commons
