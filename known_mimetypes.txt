@@ -1,5 +1,9 @@
+application/atom+xml
+application/font-sfnt
+application/java-vm
 application/javascript
 application/json
+application/msaccess
 application/msword
 application/pdf
 application/postscript
@@ -63,5 +67,7 @@ text/x-python
 text/x-sh
 text/x-tex
 video/mp4
+video/ogg
 video/quicktime
+video/webm
 x-world/x-vrml
