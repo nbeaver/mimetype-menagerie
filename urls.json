@@ -34,6 +34,12 @@
             "http://userpages.umbc.edu/~squire/download/cube2.stl",
             "https://raw.githubusercontent.com/pib/pycam/master/samples/Sphere0.stl"
         ],
+        "vnd.comicbook+zip": [
+            "https://digitalcomicmuseum.com/index.php?dlid=6802"
+        ],
+        "vnd.comicbook-rar": [
+            "https://digitalcomicmuseum.com/index.php?dlid=95"
+        ],
         "vnd.ms-cab-compressed": [
             "https://github.com/arisada/afl-fuzz/raw/master/testcases/archives/common/cab/small_archive.cab"
         ],
