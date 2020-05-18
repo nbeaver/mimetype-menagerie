@@ -50,7 +50,7 @@ Validation
 ----------
 
 - [x] Check for broken URLs.
-- [ ] Change JSON so that each file can have multiple URLs.
+- [ ] Change `urls.json` so that each file can have multiple URLs.
 - [x] Check that each file is in the folder corresponding to its mimetype.
 - [ ] List of SHA1 checksums to avoid re-downloading.
     - [ ] Even better, make zsync control files.
