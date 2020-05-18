@@ -21,6 +21,8 @@ application/vnd.openxmlformats-officedocument.presentationml.presentation
 application/vnd.openxmlformats-officedocument.spreadsheetml.sheet
 application/vnd.openxmlformats-officedocument.wordprocessingml.document
 application/x-cab
+application/x-cbr
+application/x-cbz
 application/x-dvi
 application/x-iso9660-image
 application/x-tar

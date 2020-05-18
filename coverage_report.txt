@@ -1,7 +1,7 @@
 application
-    IANA mimetypes in repo:   24 (  1.79%)
-    IANA mimetypes missing: 1315 ( 98.21%)
-    In repo, but not IANA:    12
+    IANA mimetypes in repo:   26 (  1.94%)
+    IANA mimetypes missing: 1313 ( 98.06%)
+    In repo, but not IANA:    13
 audio
     IANA mimetypes in repo:    1 (  0.66%)
     IANA mimetypes missing:  151 ( 99.34%)
@@ -34,6 +34,6 @@ video
     IANA mimetypes in repo:    3 (  3.70%)
     IANA mimetypes missing:   78 ( 96.30%)
     In repo, but not IANA:     1
-Total IANA mimetypes in repo:   52 (  2.92%)
-Total IANA mimetypes missing: 1729 ( 97.08%)
-Total in repo, but not IANA:    32
+Total IANA mimetypes in repo:   54 (  3.03%)
+Total IANA mimetypes missing: 1727 ( 96.97%)
+Total in repo, but not IANA:    33
