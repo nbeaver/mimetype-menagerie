@@ -14,6 +14,29 @@ Why?
 
 Because examples are useful and file extensions are unreliable.
 
+- Mimetype associations often rely on "magic" values
+  at the beginning of files. Testing to see if these
+  are working correctly requires an actual valid example file,
+  not just an arbitrary file with the correct file extension.
+
+  For example, this is the way that
+  single-page and multipage DJVU are distinguished.
+
+  https://bugzilla.gnome.org/show_bug.cgi?id=754467
+
+  https://sourceforge.net/p/djvu/bugs/283/
+
+- Even when mimetype associations are working correctly,
+  applications themselves sometimes have trouble with a certain file format.
+  Having a public-domain example to reference is helpful
+  when submitting a bug report.
+
+  For example, older versions of Inkscape
+  would sometimes show the wrong color
+  for imported Adobe Illustrator files.
+
+  https://bugs.launchpad.net/inkscape/+bug/1518504
+
 --------
 Criteria
 --------
