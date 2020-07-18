@@ -19,6 +19,8 @@ Mimetypes to add
     - [ ] `audio/x-xm` Extended module tracker audio format ([`.xm`](https://en.wikipedia.org/wiki/XM_%28file_format%29))
 - `image`
     - [x] [`image/gif`](media-types/image/gif/Green_bot_animated.gif) An animated gif ([`.gif`](https://en.wikipedia.org/wiki/GIF))
+    - [ ] [application/vnd.google-earth.kml+xml](https://en.wikipedia.org/wiki/Keyhole_Markup_Language)
+    - [ ] [application/vnd.google-earth.kmz](https://en.wikipedia.org/wiki/Keyhole_Markup_Language)
 - `text`
     - [`text/plain`](media-types/text/plain/)
         - [ ] INI config files [`.ini`](https://en.wikipedia.org/wiki/INI_file)
