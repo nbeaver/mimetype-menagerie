@@ -43,6 +43,7 @@ Mimetypes to add
     - `text/x-chdr`
     - `text/x-diff`
     - `text/x-perl`
+    - [`text/x-ldif`](https://en.wikipedia.org/wiki/LDAP_Data_Interchange_Format)
 
 - [ ] Add files from [file-format-commons](https://github.com/alexschiller/file-format-commons)
 - [ ] Add files from [tika test-documents](https://github.com/apache/tika/tree/master/tika-parsers/src/test/resources/test-documents)
