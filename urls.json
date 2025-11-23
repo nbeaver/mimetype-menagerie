@@ -156,6 +156,9 @@
             "https://upload.wikimedia.org/wikipedia/commons/6/61/24_3_2.gif",
             "https://commons.wikimedia.org/wiki/File:Green_bot_animated.gif"
         ],
+        "heif": [
+            "https://github.com/strukturag/libheif/blob/24cd2a63caaf3a8f6efc562d92371dc866f3befa/examples/example.heic"
+        ],
         "jp2": [
             "https://github.com/arisada/afl-fuzz/raw/master/testcases/images/jp2/not_kitty.jp2"
         ],
