@@ -22,6 +22,10 @@ Mimetypes to add
     - [x] [`image/gif`](media-types/image/gif/Green_bot_animated.gif) An animated gif ([`.gif`](https://en.wikipedia.org/wiki/GIF))
     - [ ] [application/vnd.google-earth.kml+xml](https://en.wikipedia.org/wiki/Keyhole_Markup_Language)
     - [ ] [application/vnd.google-earth.kmz](https://en.wikipedia.org/wiki/Keyhole_Markup_Language)
+    - [ ] [image/heic](https://en.wikipedia.org/wiki/High_Efficiency_Image_File_Format) a.k.a. image/heif
+- `model`
+    - [ ] [model/gltf+json](https://en.wikipedia.org/wiki/GlTF)
+    - [ ] [model/gltf-binary](https://en.wikipedia.org/wiki/GlTF)
 - `text`
     - [`text/plain`](media-types/text/plain/)
         - [ ] INI config files [`.ini`](https://en.wikipedia.org/wiki/INI_file)
@@ -39,6 +43,9 @@ Mimetypes to add
         - [ ] `.csv` files that are entirely numeric
         - [ ] `.csv` files with quoting
         - [ ] `.csv` files with semicolon delimiters and commas as decimal marks.
+    - `text/vnd.graphviz`
+        - [ ] `.dot` file
+        - [ ] `.gv` file
     - [ ] `text/x-apt-sources-list` (sources.list file for Debian)
         - https://www.debian.org/doc/debian-policy/ch-controlfields.html#s-controlsyntax
     - `text/x-chdr`
