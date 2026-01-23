@@ -16,6 +16,7 @@ Mimetypes to add
     - [x] [`application/sla`](media-types/application/sla) Stereolithography CAD file ([`.stl`](https://en.wikipedia.org/wiki/STL_%28file_format%29))
     - [ ] `application/x-raw-disk-image` Raw disk image ([`.img`](https://en.wikipedia.org/wiki/IMG_%28file_format%29))
     - [ ] `application/x-virtualbox-vmdk` Virtual Machine Disk ([`.vmdk`](https://en.wikipedia.org/wiki/VMDK))
+    - [ ] `application/x-xpinstall` XPInstall ([`.xpi`](https://en.wikipedia.org/wiki/XPInstall))
 - `audio`
     - [ ] `audio/x-xm` Extended module tracker audio format ([`.xm`](https://en.wikipedia.org/wiki/XM_%28file_format%29))
 - `image`
