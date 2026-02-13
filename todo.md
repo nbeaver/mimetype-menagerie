@@ -17,6 +17,7 @@ Mimetypes to add
     - [ ] `application/x-raw-disk-image` Raw disk image ([`.img`](https://en.wikipedia.org/wiki/IMG_%28file_format%29))
     - [ ] `application/x-virtualbox-vmdk` Virtual Machine Disk ([`.vmdk`](https://en.wikipedia.org/wiki/VMDK))
     - [ ] `application/x-xpinstall` XPInstall ([`.xpi`](https://en.wikipedia.org/wiki/XPInstall))
+    - [ ]  application/oebps-package+xml Open eBook ([`.opf`](https://en.wikipedia.org/wiki/Open_eBook))
 - `audio`
     - [ ] `audio/x-xm` Extended module tracker audio format ([`.xm`](https://en.wikipedia.org/wiki/XM_%28file_format%29))
 - `image`
@@ -44,6 +45,8 @@ Mimetypes to add
         - [ ] `.csv` files that are entirely numeric
         - [ ] `.csv` files with quoting
         - [ ] `.csv` files with semicolon delimiters and commas as decimal marks.
+    - `text/nfo
+        - [ ] https://en.wikipedia.org/wiki/.nfo
     - `text/vnd.graphviz`
         - [ ] `.dot` file
         - [ ] `.gv` file
@@ -53,6 +56,8 @@ Mimetypes to add
     - `text/x-diff`
     - `text/x-perl`
     - [`text/x-ldif`](https://en.wikipedia.org/wiki/LDAP_Data_Interchange_Format)
+    - text/x-sfv
+        - https://en.wikipedia.org/wiki/Simple_file_verification
 
 - [ ] Add files from [file-format-commons](https://github.com/alexschiller/file-format-commons)
 - [ ] Add files from [tika test-documents](https://github.com/apache/tika/tree/master/tika-parsers/src/test/resources/test-documents)
